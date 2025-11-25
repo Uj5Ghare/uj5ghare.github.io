@@ -14,7 +14,7 @@ const Hero = () => {
           </h1>
           <p>
             {" "}
-            A Skilled Associate DevOps Engineer with less than 1 year of experience in DevOps & AWS Cloud. Experience working in Agile team with UNIX like systems including good scripting skills in Bash and Python. Currently, I’m looking for a full-time role to bring my skills to new challenges and teams.
+            As a passionate Software Engineer, I specialize in designing and implementing scalable, secure, and efficient Kubernetes infrastructure. With hands-on experience in leading cloud platform AWS. I've developed Helm charts, optimized CI/CD pipelines, and integrated cutting-edge technologies to enhance system performance and manageability with deployment and disaster recovery strategies.
           </p>
         </div>{" "}
         <Link to="works" smooth={true} duration={500}>

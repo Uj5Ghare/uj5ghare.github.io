@@ -3,38 +3,45 @@ import "./../styles/about.css";
 
 const About = () => {
   const skills = [
-    "AWS Cloud",
+    "AWS",
+    "Kubernetes",
+    "Kops",
+    "Helm",
+    "ArgoCD",
+    "Prometheus",
+    "Grafana",
+    "Loki",
+    "ELK Stack",
     "GitHub Actions",
     "GitLab CI/CD",
-    "Jenkins",
     "Docker",
-    "Kubernetes",
-    "Helm",
+    "Docker-Compose",
     "Terraform",
     "Ansible",
     "Nginx",
     "SonarQube",
     "Trivy",
     "Zabbix",
-    "PostgreSQL",
-    "Python",
     "Bash",
     "Git",
     "PM2",
-    "Ubuntu Linux",
+    "Linux",
     "Notion",
     "ClickUp",
     "Loom",
   ];
   const basics = [
     "Azure",
+    "Python",
     "HTML",
     "CSS",
-    "AI/ML",
     "MongoDB",
     "Cloudflare",
-    "ArgoCD",
-    "Prometheus & Grafana"
+    "MCP",
+    "N8N",
+    "VPN",
+    "MLOps"
+
   ];
   return (
     <section id="about" className="aboutSection sectionHead">
@@ -43,10 +50,14 @@ const About = () => {
         <div className="aboutContent">
           <div className="aboutMe">
             <p>
-              I'm a Associate DevOps Engineer who loves to automate things. During my early days, I struggled with choosing a domain to specialize in. It was then that a friend suggested DevOps to me. Intrigued by the idea and concept, I decided to explore and dive deeper into the world of DevOps. When I witnessed automating things, I felt exited, which fueled my motivation to learn more.
               <br />
               <br />
-              At first, I learned fundamentals of DevOps and deployed simple web application by following DevOps best practices. However, fast forward to today, I have significantly improved my skills to the point where I am capable of working on complex projects. I'm currently researching various release and deployment processes as well as effective monitoring techniques to reduce application downtime.
+              I have over 1.8+ years of experience working with more than two software companies, focusing on software delivery, maintena
+              nce, and production environments. My work has involved continuous improvement and automating the entire SDLC using the
+              latest DevOps tools and techniques from design and architecture through implementation, deployment, and successful operations.
+              <br />
+              <br />
+              I help software organizations improve the quality of their SDLC, reduce software development and operational costs, and enhance feedback and monitoring. I have in-depth experience in the following domains, supported by real project implementation.
             </p>
           </div>
 

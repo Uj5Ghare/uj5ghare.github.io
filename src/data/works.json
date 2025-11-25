@@ -1,5 +1,65 @@
 [
     {
+        "Title": "ZIKHARA AI SAAS",
+        "Description": "Migrated all environments from EC2 deployments to Kubernetes, managed staging, pre-prod, and production using GitOps with ArgoCD, implemented observability with Grafana, Prometheus, Loki, and CloudWatch, built CI/CD pipelines with AWS DevOps Services, and configured ArgoCD and Slack alerts.",
+        "Skills": [
+            "AWS",
+            "Kubernetes",
+            "Kops",
+            "Helm",
+            "ArgoCD",
+            "Slack",
+            "Prometheus",
+            "Grafana",
+            "Loki"
+        ],
+        "Code": "https://zikhara.ai",
+        "Image": "zikhara-ai.png"
+    },
+    {
+        "Title": "PREPLEX",
+        "Description": "Deployed the project from scratch on AWS, including VPC setup and Docker container deployment on EC2, managed and monitored non-prod and production environments, handled database backups on S3 and S3 Glacier for cost savings, and oversaw the release process using GitLab CI/CD with Slack-based alerting.",
+        "Skills": [
+            "AWS",
+            "GitLab CI/CD",
+            "Slack",
+            "Docker",
+            "Nginx",
+            "ELK Stack"
+        ],
+        "Code": "https://preplex.app",
+        "Image": "preplex.png"
+    },
+    {
+        "Title": "Vegastack",
+        "Description": "Created Terraform manifests with AWS S3 backend to automatically provision spot instances and execute Ansible playbooks for testing blog tutorials on vegastack.com.",
+        "Skills": [
+            "AWS",
+            "Terraform",
+            "Ansible",
+            "Git",
+            "GitHub Actions",
+            "Server-Hardening",
+            "Zabbix"
+        ],
+        "Code": "https://vegastack.com",
+        "Image": "vegastack.png"
+    },
+    {
+        "Title": "Diabetes-Prediction-Mlops-Project",
+        "Description": "This project helped me learn Building and Deploying an ML Model using a simple and real-world use case: predicting whether a person is diabetic based on health metrics.",
+        "Skills": [
+            "FastAPI",
+            "Docker",
+            "K8s",
+            "Helm",
+            "GitHub Actions",
+            "Mlops"
+        ],
+        "Code": "https://github.com/Uj5Ghare/Diabetes-Prediction-Mlops-Project.git",
+        "Image": "mlops.png"
+    },
+    {
         "Title": "E2E-EKS-Three-Tier-DevSecOps-Project",
         "Description": "This project covered everything from setting up tools to deploying a Three-Tier app, ensuring data persistence, and implementing CI/CD pipelines.",
         "Skills": [

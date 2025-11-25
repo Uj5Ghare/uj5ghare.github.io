@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import Resume from "./../assets/Resume.pdf"
+// import Resume from "./../assets/Resume.pdf"
 import Avatar from "./../assets/Avatar.png"
 
 
@@ -63,7 +63,7 @@ const Nav = () => {
         <li> <Link to="experience" smooth={true} duration={500} onClick={handleNavItemClick}>Experience</Link></li>
         <li> <Link to="works" smooth={true} duration={500} onClick={handleNavItemClick}>Works</Link></li>
         <li> <Link to="contact" smooth={true} duration={500} onClick={handleNavItemClick}>Contact</Link></li>
-        <a href={Resume} rel="noreferrer" target="_blank" onClick={handleNavItemClick}><button className="button resume-btn">Resume</button></a>
+        {/* <a href={Resume} rel="noreferrer" target="_blank" onClick={handleNavItemClick}><button className="button resume-btn">Resume</button></a> */}
       </div>
       <div className={`hamburger hamburger--spin ${isActive ? 'is-active' : ''}`}
         onClick={handleToggle}>

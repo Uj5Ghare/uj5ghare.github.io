@@ -27,19 +27,23 @@ const Experience = () => {
             </div>
             <ul>
               <li>
-                Worked on AWS cost optimization and found cost saving opportunities that helps us saving $400+ dollers per month on 1 project only.
+              Led <b>AWS cost-optimization</b> initiatives by conducting in-depth usage analysis and implementing strategic improvements,
+              achieving consistent monthly savings of <b>$500+</b> while enhancing overall resource efficiency.              
               </li>
               <li>
-                Managing 2 Projects of Kubernetes with Kops and Helm as package manager.
+              Architected and currently oversee Kubernetes environments for two production projects using <b>Kops</b> and <b>Helm</b>, establishing
+              GitOps-driven deployment workflows with <b>ArgoCD</b> to ensure reliability, scalability, and operational consistency.              
               </li>
               <li>
-                Setup and configured Monitoring with Grafana, Prometheus and Loki.
+              Designed and implemented a observability stack leveraging <b>Grafana</b>, <b>Prometheus</b>, <b>Loki</b>, <b>AlertManager</b>, <b>CAdviser</b>, <b>FluntBit</b>,
+              and <b>AWS Cloudwatch</b>, significantly improving system visibility,incident response, and performance monitoring.
               </li>
               <li>
-                Handling SRE part of microservice applications with K8s, Grafana, Prometheus and Loki.
+              Own <b>SRE</b> functions for microservice-based platforms, driving reliability, performance tuning, and operational excellence
+              across Kubernetes, monitoring, and logging ecosystems. 
               </li>
               <li>
-                <b>Tech Stack:</b> - AWS, Kubernetes, Helm, GitLab CI/CD, Docker-Compose, Terraform, Ansible, Bash, Python, Grafana, Prometheus, Loki
+                <b>Tech Stack:</b> - AWS, Kubernetes, Helm, GitLab CI/CD, Bash, Python, Grafana, Prometheus, Loki, Kops, ArgoCD, AlertManager, CAdviser, FluntBit, AWS Cloudwatch, ELK Stack
               </li>
             </ul>
           </div>
