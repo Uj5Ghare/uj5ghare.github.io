@@ -71,7 +71,6 @@ output.txt
 # Trash folder
 .trash/
 .replit
-package-lock.json
 .local
 .agents
 # Optional: Keep old components for reference but don't track changes
