@@ -1,0 +1,430 @@
+:root {
+  --primary-color: #64ffda;
+  /* --light-color: #8892b0; */
+  --light-color: #a1adcf;
+  --dimWhite-color: #ccd6f6;
+  --heading-color: #263339;
+  --heading-font: 60px;
+
+}
+
+.comps {
+  position: relative;
+  z-index: 999;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.heroContent {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 840px;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.heroContent h1 {
+  font-size: 75px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: #ccd6f6;
+}
+
+.heroContent p {
+  width: 830px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 400;
+  color: var(--light-color);
+
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.button {
+  width: fit-content;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  padding: 15px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--primary-color);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  outline: 1px solid var(--primary-color);
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+
+.checkout {
+  font-size: 16px;
+}
+
+.checkout:hover {
+  transform: translateY(-3px);
+}
+
+.button:hover {
+  background-color: #0b443785;
+}
+
+.resume-btn {
+  padding: 10px 20px;
+}
+.avatar {
+  width: 60px;
+  height: 60px; /* Make it square for perfect circle */
+  cursor: pointer;
+  background-color: white;
+  border-radius: 50%; /* Creates the circular shape */
+  /* padding: 5px; */
+  object-fit: cover; /* Ensures image fits nicely within the circle */
+}
+nav {
+  padding: 0px 80px;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--dimWhite-color);
+  background-color: transparent;
+ 
+
+}
+
+
+.active{
+  
+  position: fixed;
+  top: 0px;
+  transition: 0.3s linear;
+  z-index: 999;
+
+}
+.hidden{
+  position: fixed;
+  top: -100px;
+  transition: 0.3s linear;
+
+}
+
+
+.navItems {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  font-size: 14px;
+}
+
+.navItems li {
+  list-style-type: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.navItems li:hover {
+  color: var(--primary-color);
+}
+
+.socialIcons {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.socialIcons li {
+  margin-bottom: 25px;
+}
+
+.socialIcons li a {
+  text-decoration: none;
+}
+
+.socialIcons {
+  position: fixed;
+  bottom: 120px;
+  left: 80px;
+  transform: translateX(-50%);
+
+}
+
+.socialIcons::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 120px;
+  background-color: var(--light-color);
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.socialIcons li a svg {
+  width: 22px;
+  height: 22px;
+}
+
+.socialIcons li a:hover svg {
+  transition: transform 0.2s ease;
+}
+
+.socialIcons li a:hover svg {
+  stroke: var(--primary-color);
+  transform: translateY(-3px)
+}
+
+.mailBar {
+  position: fixed;
+  bottom: 120px;
+  right: 70px;
+  transform: translateX(-50%);
+}
+
+.mailBar::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 120px;
+  background-color: var(--light-color);
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mailBar p {
+  writing-mode: vertical-lr;
+  transform: rotate(360deg);
+}
+
+.mailBar p a {
+  text-decoration: none;
+  color: var(--light-color);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  font-family: 'Montserrat', sans-serif;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.mailBar p a:hover {
+  color: var(--primary-color);
+  letter-spacing: 0.5px;
+}
+
+
+
+.sectionHead {
+  width: 100%;
+  height: auto;
+  padding: 80px 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionHead h1 {
+  text-align: center;
+  font-size: var(--heading-font);
+  color: var(--dimWhite-color);
+}
+
+@media only screen and (max-width: 1200px) {
+  nav {
+    padding: 0px 40px;
+
+  }
+
+  .mailBar {
+    right: 30px;
+  }
+
+  .socialIcons {
+    left: 40px;
+
+  }
+
+  .sectionHead {
+    padding: 80px 80px;
+  }
+}
+
+@media only screen and (max-width: 1075px) {
+  .heroContent h1 {
+    font-size: 60px;
+  }
+
+  .heroContent p {
+    width: 680px;
+  }
+
+  .sectionHead {
+    padding: 80px 100px;
+  }
+
+  .sectionHead h1 {
+    text-align: center;
+    font-size: 45px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .mailBar {
+    display: none;
+  }
+
+  .socialIcons {
+    display: none;
+
+  }
+
+  .socialIcons::after {
+    display: none;
+  }
+
+  .sectionHead {
+    padding: 80px 40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .heroContent h1 {
+    font-size: 7.5vw;
+  }
+
+  .heroContent p {
+    width: 85%;
+    margin: 20px auto;
+    text-align: left;
+  }
+
+  .nav {
+    position: relative;
+  }
+
+  .navItems {
+    position: absolute;
+    background: #112240;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 0px;
+    right: -100%;
+    width: 50%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    z-index: 999;
+    gap: 30px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s, right 0.5s, visibility 0s linear 0.5s;
+  }
+  
+  .navsVisible {
+    visibility: visible;
+    opacity: 1;
+    right: 0;
+    transition: opacity 0.5s, right 0.5s, visibility 0s linear;
+  }
+  
+
+
+
+
+}
+
+@media only screen and (max-width: 550px) {
+  .sectionHead {
+    padding: 50px 20px;
+  }
+  .avatar {
+    width: 40px;
+    height: 40px; /* Keep it square for perfect circle */
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  nav {
+    padding: 0px 20px;
+    height: 70px;
+
+  }
+
+  .navsVisible {
+    width: 70%;
+  }
+
+  .heroContent {
+    margin-top: -20px;
+    padding: 0px 20px;
+    gap: 20px;
+    align-items: start;
+  }
+
+
+
+
+  .heroContent h1 {
+    text-align: left;
+    font-size: 7.5vw;
+
+  }
+
+  .heroContent p {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .button {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+
+  .button:hover {
+    background-color: transparent;
+  }
+
+  .checkout:hover {
+    transform: none;
+  }
+
+  .sectionHead h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .resume-btn{
+    padding: 8px 12px;
+  }
+
+
+
+}

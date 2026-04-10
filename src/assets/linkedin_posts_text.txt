@@ -1,0 +1,1010 @@
+All activity
+
+Posts
+
+Comments
+
+Images
+
+Documents
+
+Reactions
+Loaded 27 Posts posts
+Feed post number 1
+View Sahil Patel’s  graphic link
+Sahil PatelSahil Patel
+   • YouVerified • You
+Associate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia CertifiedAssociate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia Certified
+1w •  1 week ago • Visible to anyone on or off LinkedIn
+
+24 Hours. Zero Sleep. One Mission. 🚀
+
+Just returned from the AI-Manthan Hackathon by AtliQ Technologies, and I'm still running on adrenaline and cold coffee! Out of 70+ incredible proposals, Team Innovatrix made it to the Top 10 – and what a journey it's been.
+
+𝐓𝐡𝐞 𝐂𝐡𝐚𝐥𝐥𝐞𝐧𝐠𝐞 𝐓𝐡𝐚𝐭 𝐂𝐡𝐚𝐧𝐠𝐞𝐝 𝐄𝐯𝐞𝐫𝐲𝐭𝐡𝐢𝐧𝐠: We tackled a real-world problem that keeps IT service leaders up at night: 𝐅𝐨𝐫𝐞𝐒𝐢𝐠𝐡𝐭 – an Operational Risk Early Warning System for IT Projects. The goal? Predict project failures, resource bottlenecks, and budget overruns before they become escalations.
+
+24 𝐇𝐨𝐮𝐫𝐬 𝐨𝐟 𝐏𝐮𝐫𝐞 𝐄𝐱𝐞𝐜𝐮𝐭𝐢𝐨𝐧: In one sleepless sprint, alongside GAURAV RATHVA, Dharmendra Mala and Dipendrasinh Mahida we built a production-ready, fully scalable ML-powered platform from scratch featuring:
+
+- Real-time risk prediction dashboards
+- Anomaly detection & cost overrun forecasting
+- Automated reporting systems
+- Enterprise-grade architecture: FastAPI Python backend, Next.js 15 frontend, PostgreSQL with dbt transformations, ML models for predictive analytics, AI insights, and Docker-containerized deployment – all integrated into a seamless monorepo. This wasn't just a prototype. This was enterprise-grade, deployment-ready.
+
+𝐓𝐡𝐞 𝐋𝐞𝐬𝐬𝐨𝐧 𝐓𝐡𝐚𝐭 𝐇𝐢𝐭 𝐃𝐢𝐟𝐟𝐞𝐫𝐞𝐧𝐭: "Technical excellence without business intelligence is just an expensive hobby."
+
+This was my third hackathon, but the first where I truly understood: the code is only half the battle. Understanding the why behind what you're building – the business impact, the stakeholder pain points, the ROI – that's what transforms engineers into problem-solvers.
+
+𝐖𝐡𝐲 𝐓𝐡𝐢𝐬 𝐎𝐧𝐞 𝐖𝐚𝐬 𝐃𝐢𝐟𝐟𝐞𝐫𝐞𝐧𝐭: Unlike previous hackathons, we didn't just participate – we executed relentlessly. My team was tireless, motivated, and laser-focused. When you're surrounded by people who refuse to compromise on quality even at 4 AM, magic happens.
+
+𝐊𝐮𝐝𝐨𝐬 𝐭𝐨 𝐀𝐭𝐥𝐢𝐐 𝐓𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐢𝐞𝐬: For a first-time flagship hackathon, AtliQ absolutely crushed it. From acknowledging every team's effort to providing genuine mentorship, organizing engaging activities, and keeping the energy alive – they set a new standard. Real, accessible, and invested in our success.
+
+Here's to sleepless nights that matter, teams that push boundaries, and solutions that solve real problems. 💡
+
+Team Innovatrix – we built something remarkable. Onwards and upwards! 🎯
+
+hashtag#AIManthan hashtag#Top10Finalists hashtag#HackTheFuture hashtag#AtliQHackathon hashtag#BuildWithAI hashtag#AIHackathon hashtag#MachineLearning hashtag#FullStackDevelopment hashtag#HackathonLife hashtag#TechInnovation hashtag#ProblemSolving hashtag#TeamWork hashtag#ExecutionOverIdeas
+
+No alternative text description for this image
+
+No alternative text description for this image
+
+No alternative text description for this image
+
+No alternative text description for this image
++6
+Activate to view larger image,
+with Dharmendra Mala and 1 other
+likecelebratelove
+92
+You and 91 others
+1 comment
+
+like
+Like
+
+Comment
+
+Repost
+
+Send
+2,359 impressions
+View analytics
+Feed post number 2
+View Sahil Patel’s  graphic link
+Sahil PatelSahil Patel
+   • YouVerified • You
+Associate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia CertifiedAssociate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia Certified
+6mo •  6 months ago • Visible to anyone on or off LinkedIn
+
+🌟 Recognized and Ready for What’s Next 🏆
+
+Had the opportunity to reflect on my journey so far at our first Annual Townhall at Digiflux Technologies Private Limited, where I was honored to receive the Team Star Award.
+
+Over the past nine months, I have worked on multiple projects, contributed to key deliverables, streamlined internal processes, and collaborated with a talented team. From late-night debugging to deploying impactful features, every challenge presented a learning curve and a sense of purpose.
+
+This recognition and shoutout isn’t just about a moment or an award—it’s about the culture we’ve cultivated here. A place where ownership, growth, and collaboration are more than just values—they’re part of the everyday.
+
+Truly grateful to all the colleagues who’ve become mentors, teammates, and friends along the way. And a special thanks to Hemal Pandya Sir and the Digiflux team for consistently enabling a space where learning is encouraged and effort is appreciated.
+
+While this feels like a milestone, it’s only the beginning. Here’s to new challenges, sharper solutions, and more milestones ahead. I’m excited for what’s next!" 🚀
+
+hashtag#digifluxtechnologies hashtag#recognition hashtag#growthintech hashtag#teamwork hashtag#problemsolving hashtag#buildingtogether hashtag#engineeringjourney hashtag#townhallmeeting hashtag#careergrowth hashtag#techlife hashtag#ontothenext
+
+No alternative text description for this image
+
+No alternative text description for this image
+
+No alternative text description for this image
+
+No alternative text description for this image
+Activate to view larger image,
+likecelebratelove
+147
+You and 146 others
+20 comments
+
+like
+Like
+
+Comment
+
+Repost
+
+Send
+2,963 impressions
+View analytics
+Feed post number 3
+View Sahil Patel’s  graphic link
+Sahil PatelSahil Patel
+   • YouVerified • You
+Associate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia CertifiedAssociate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia Certified
+8mo •  8 months ago • Visible to anyone on or off LinkedIn
+
+🎓 Proudly Celebrating Another Research Milestone: Breaking Barriers in Aerial Vision with YOLOv8 for Advanced Small Object Detection.
+
+I am pleased to share another publication in my research journey. Our latest research paper, "Enhancing Small Object Detection in Aerial Imagery Using YOLOv8 Architecture: A Study on Small Bird Detection," has been officially published by AIP (American Institute of Physics) in the AIP Conference Proceedings (Volume 3255, Issue 1, 2025). 
+
+This work was first presented at the International Conference on Robotics, Automation, and Intelligent Computing (ICRAIC 2K24), held in Pune, India, on May 18–19, 2024. 
+
+📖 Read the Full Paper here: https://lnkd.in/dNa4QXkW 
+
+I am grateful to my co-authors Nisarg Shah, Het Pathak, and Dr. Mrugendrasinh Rahevar for their dedication and invaluable contributions to this research.
+
+A special thanks to Mrugendrasinh Rahevar Sir for his mentorship and guidance, which played a crucial role in shaping this study and my B.Tech journey.
+
+Detecting small objects in aerial imagery is challenging due to resolution, contrast, and spatial constraints—impacting fields like avian ecology, drone surveillance, and autonomous navigation. Our study leverages YOLOv8 to enhance small bird detection, benchmarking different variants (yolov8n, yolov8m, yolov8x) to identify the most optimized model for real-world applications.
+
+Grateful to CHARUSAT and CE CSPIT for fostering research and innovation. Thanks to the ICRAIC 2K24 Conference for providing a platform to present our findings and to RAME (Recent Advances in Mechanical Engineering) and AIP (American Institute of Physics) for recognizing our work and publishing it in a journal indexed by Scopus, Web of Science, and other renowned databases. 
+
+To further amplify the impact of our research, we have shared our study on Kudos, a platform that helps researchers communicate their work to a global audience. Through Grow Kudos, we aim to highlight the significance of our findings and reach a broader community of researchers, practitioners, and enthusiasts.
+
+🔗 Explore the Story Behind Our Research on Grow Kudos: https://lnkd.in/dGeFxVpm
+
+Excited for more research and collaborations in the future!
+
+hashtag#research hashtag#publication hashtag#computervision hashtag#yolov8 hashtag#aip hashtag#icraic hashtag#ai hashtag#machinelearning hashtag#charusat hashtag#innovation hashtag#icraic2024 hashtag#aiforsecurity hashtag#objectdetection hashtag#surveillance
+Activate to view larger image,
+graphical user interface, text, application, email, website
+Activate to view larger image,
+likecelebrate
+93
+6 comments
+
+like
+Like
+
+Comment
+
+Repost
+
+Send
+1,980 impressions
+View analytics
+Feed post number 4
+View Sahil Patel’s  graphic link
+Sahil PatelSahil Patel
+   • YouVerified • You
+Associate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia CertifiedAssociate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia Certified
+9mo • Edited •  9 months ago • Edited • Visible to anyone on or off LinkedIn
+
+🎓 14th Convocation at CHARUSAT and A Journey to Remember 🎓
+
+On Saturday, January 4th, 2025, I had the privilege of officially graduating and completing my journey of B.Tech Computer Engineering (2020-2024) with 9.35 CGPA as part of the 14th Convocation of Charotar University of Science and Technology (CHARUSAT). It’s been a rollercoaster of moments—some stressful, many joyful, and all unforgettable. As I reflect on these years, I feel a mix of nostalgia and excitement for the experiences that have shaped me into the person I am today.
+
+From the thrill (and chaos) of preparing for exams to countless hours traveling by bus—those rides were filled with unplanned adventures and some of the best conversations. College life wasn’t just about coding marathons, hackathons, lectures, vivas, and practicals, but also bunks, completing attendances, spontaneous food trips, and late-night brainstorming sessions.
+
+Being part of the CHARUSAT football team and staying back for sports and cultural events like Spoural and Vrund added to the vibrant campus experience. Along the way, I found incredible friends who turned ordinary days into unforgettable memories, making college life much more than academics.
+
+My Internship experiences at Larson & Toubro, along with training from Motorola Solutions, writing and publishing research papers, and engaging in innovative projects every semester as part of my curriculum, helped me uncover my potential and inspired me to dream bigger for the future. These opportunities emphasized the significance of continuous learning and innovation beyond the classroom.
+
+CHARUSAT wasn’t just about books and lectures; it was about learning, fun, and the little things that made the journey worthwhile. I am grateful to Chandubhai S. Patel Institute of Technology, CE CSPIT, my faculty, friends, and everyone who contributed to these unforgettable years —thank you for being part of it all.
+
+20CE101 signing off!
+
+Here’s to the next chapter, but always cherish where it all began. Cheers, CHARUSAT! 🎉
+
+hashtag#charusat hashtag#convocation hashtag#charusatconvocation2025 hashtag#graduation hashtag#computerengineering hashtag#collegememories hashtag#ontothenext
+
+No alternative text description for this image
+
+No alternative text description for this image
+
+No alternative text description for this image
+
+No alternative text description for this image
++4
+Activate to view larger image,
+likecelebratelove
+443
+You and 442 others
+16 comments
+
+like
+Like
+
+Comment
+
+Repost
+
+Send
+12,016 impressions
+View analytics
+Feed post number 5
+View Sahil Patel’s  graphic link
+Sahil PatelSahil Patel
+   • YouVerified • You
+Associate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia CertifiedAssociate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia Certified
+10mo • Edited •  10 months ago • Edited • Visible to anyone on or off LinkedIn
+
+After much anticipation and giving justice to months of hard work and collaboration, I am beyond excited to share that our research paper, "Revolutionizing Educational Assessment: Deep Learning for Question Paper Quality Evaluation," has been officially published by Springer Nature as part of the book ICT for Intelligent Systems (Proceedings of ICTIS 2024, Volume 5), which is a part of the book series: Lecture Notes in Networks and Systems.
+
+This work was first presented at the ICTIS 2024 Conference in April, marking a milestone in its journey toward publication.
+
+📖 Explore the Full Chapter here: https://lnkd.in/dwVVjngv
+
+I would like to express my heartfelt gratitude to those who made this milestone possible through their unwavering support and contributions—my co-authors: Pranay Patel, Samarth Dave, Sanjana Patel, Dr. Nikita Bhatt Mam, and Dr.Amit Thakkar Sir.
+
+Special thanks to Dr. Nikita Bhatt Mam and Dr. Amit Thakkar Sir, whose mentorship has been invaluable.
+
+Last but not least, grateful to CE CSPIT, CHARUSAT, Knowledge Chamber of Commerce and Industry, and Springer Nature for such a significant platform. 
+
+As the first author, I am proud of this research and the collective effort dedicated to advancing deep learning approaches for improving question paper quality evaluation.
+
+The work is indexed by SCOPUS, EI Compendex, INSPEC, WTI Frankfurt eG, zbMATH, and SCImago, and all books in this series are submitted for consideration in the Web of Science.
+
+Looking forward to more innovative research and collaborations in the future!
+
+hashtag#research hashtag#publication hashtag#springernature hashtag#deeplearning hashtag#education hashtag#ictis hashtag#ictis2024 hashtag#springer hashtag#exams hashtag#assessments hashtag#bloomstaxonomy hashtag#aiforeducation
+Activate to view larger image,
+graphical user interface, text, application
+Activate to view larger image,
+likecelebrate
+79
+10 comments
+
+like
+Like
+
+Comment
+
+Repost
+
+Send
+2,754 impressions
+View analytics
+Feed post number 6
+Sahil’s profile photo
+Sahil Patel reposted this
+
+View CE CSPIT’s  graphic link
+CE CSPITCE CSPIT
+   • 1stVerified • 1st
+U & P U. Patel Department of Computer Engineering, CSPIT, CHARUSATU & P U. Patel Department of Computer Engineering, CSPIT, CHARUSAT
+1yr •  1 year ago • Visible to anyone on or off LinkedIn
+📝 Congratulating Mrugendrasinh Rahevar, Sahil Patel, Het Pathak, Nisarg Shah for their remarkable achievement in presenting their paper at ICRAIC 2k24: International Conference on Robotics, Automation and Intelligent Computing, organized by RESEARCH ASSOCIATION OF MASTERS OF ENGINEERING (RAME). 🌟 Your dedication to research and innovation continues to make us proud. Wishing you many more successes ahead!
+
+hashtag#cspitce hashtag#CSPIT hashtag#Charusat hashtag#ProudMoment hashtag#ResearchExcellence hashtag#StudentSuccess
+Activate to view larger image,
+No alternative text description for this image
+Activate to view larger image,
+likecelebrate
+112
+1 comment
+2 reposts
+
+like
+Like
+
+Comment
+
+Repost
+
+Send
+Feed post number 7
+View Sahil Patel’s  graphic link
+Sahil PatelSahil Patel
+   • YouVerified • You
+Associate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia CertifiedAssociate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia Certified
+1yr • Edited •  1 year ago • Edited • Visible to anyone on or off LinkedIn
+
+Delighted to share the recent completion of my 5-month internship as a Python Developer (AI-ML) Intern at Digiflux Technologies Private Limited . 
+
+During my internship, I focused on learning and implementing end-to-end ML applications, gaining hands-on experience with Python, LLMs, Langchain, OpenAI, Sagemaker, Docker, etc. This experience allowed me to deepen my understanding of AI-ML workflows and contribute to real-world projects while adapting to corporate culture.
+
+A month ago today, I embarked on an exciting new journey as an Associate Software Engineer at Digiflux Technologies Private Limited . Transitioning from my role as an intern to a full-time position has been an incredible experience, filled with learning and growth.
+
+A special thanks to Hemal Pandya Sir and Mansi Parikh Ma’am for their constant support and guidance. Your mentorship has been invaluable to my development. I am also grateful for the fantastic work culture at Digiflux, which fosters both professional and personal growth.
+
+Looking forward to continuing this amazing journey, learning, and contributing to our innovative projects!
+
+hashtag#softwareengineer hashtag#ai hashtag#machinelearning hashtag#fullstack hashtag#cloud hashtag#DigifluxTechnologies hashtag#grateful hashtag#careergrowth hashtag#internship hashtag#professionalgrowth hashtag#newjob
+No alternative text description for this image
+
+Starting a New Position
+likecelebrate
+55
+You and 54 others
+12 comments
+
+like
+Like
+
+Comment
+
+Repost
+
+Send
+2,157 impressions
+View analytics
+Feed post number 8
+Sahil’s profile photo
+Sahil Patel reposted this
+
+View CE CSPIT’s  graphic link
+CE CSPITCE CSPIT
+   • 1stVerified • 1st
+U & P U. Patel Department of Computer Engineering, CSPIT, CHARUSATU & P U. Patel Department of Computer Engineering, CSPIT, CHARUSAT
+1yr •  1 year ago • Visible to anyone on or off LinkedIn
+🎉📝 We're thrilled to announce that CHARUSAT is providing funding for conference paper presentations to students, and under this scheme, Sahil Patel, Samarth Dave, Pranay Patel, Sanjana Patel have successfully published a paper in prestigious conferences. 🌟 Congratulations to students for this remarkable achievement, showcasing dedication and scholarly excellence! 🎓📄 hashtag#cspitce hashtag#cspit hashtag#charusat hashtag#StudentSuccess hashtag#ConferencePaper hashtag#ResearchExcellence
+Activate to view larger image,
+graphical user interface, application
+Activate to view larger image,
+like
+94
+1 comment
+2 reposts
+
+like
+Like
+
+Comment
+
+Repost
+
+Send
+Feed post number 9
+View Sahil Patel’s  graphic link
+Sahil PatelSahil Patel
+   • YouVerified • You
+Associate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia CertifiedAssociate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia Certified
+1yr • Edited •  1 year ago • Edited • Visible to anyone on or off LinkedIn
+
+Cheers to that satisfactory feeling after completing months of research work.
+
+I'm thrilled to share the exciting news of presenting my second research paper titled, "Enhancing Small Object Detection In Aerial Imagery Using YOLOv8 Architecture: A Study On Small Birds Detection", at the prestigious Second International Conference on Robotics, Automation, and Intelligent Computing - ICRAIC 2K24, held online from May 18-19, 2024. This milestone will be featured in the AIP Conference Proceedings, indexed in SCOPUS and Web of Science!
+
+This achievement is a testament to the collective efforts and exceptional contributions of my co-authors - Het Pathak, Nisarg shah, and Mrugendrasinh Rahevar.
+
+I extend my heartfelt thanks to Dr. Mrugendra Rahevar Sir for his active, unwavering mentorship, guidance, and provision of essential resources.
+
+Gratitude also goes to CE CSPIT, CHARUSAT University for the supportive environment and necessary facilities, and to the RAME - Research Association of Masters of Engineering, as well as all organizing committees of ICRAIC for this incredible platform and for accepting our paper.
+
+Listening to different ideas and presenters in the online mode was profoundly informative and inspiring, offering a wealth of new perspectives.
+
+hashtag#research hashtag#deeplearning hashtag#ICRAIC2024 hashtag#education hashtag#innovation hashtag#academic hashtag#conference hashtag#proud hashtag#icraic hashtag#researchpaper hashtag#charusat hashtag#ai hashtag#machinelearning hashtag#publication hashtag#scopus hashtag#webofscience hashtag#aip
+
+No alternative text description for this image
+
+No alternative text description for this image
+
+No alternative text description for this image
+
+No alternative text description for this image
+Activate to view larger image,
+likecelebrate
+92
+6 comments
+
+like
+Like
+
+Comment
+
+Repost
+
+Send
+2,735 impressions
+View analytics
+Feed post number 10
+View Sahil Patel’s  graphic link
+Sahil PatelSahil Patel
+   • YouVerified • You
+Associate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia CertifiedAssociate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia Certified
+1yr • Edited •  1 year ago • Edited • Visible to anyone on or off LinkedIn
+
+I am proud to share that I have presented my Research Paper, "Revolutionizing Educational Assessment: Deep Learning for Question Paper Quality Evaluation", at the prestigious 8th International Conference on Information and Communication Technology for Intelligent Systems - ICTIS 2024, at Renaissance Hotel, Ahmedabad India on 4-5th April 2024 and it will be Published in Springer LNNS series which is Scopus Indexed.
+
+This wouldn't have been possible at all without the combined efforts and exceptional contributions of all my co-authors - Samarth Dave, Pranay Patel, Sanjana Patel, Dr.Nikita Bhatt, and Dr.Amit Thakkar.
+
+I am grateful to Dr. Nikita Bhatt Mam and Dr. Amit Thakkar Sir for being amazing project mentors and providing the right guidance, unwavering encouragement, and provisioning of essential resources that were crucial for the successful completion of this project.
+
+Additionally, sincere thanks extend to the CE CSPIT, CHARUSAT University for providing the necessary facilities and environment.
+
+Special thanks to the Global Knowledge Research Foundation, Knowledge Chamber of Commerce and Industry of India, and all the organizing committees for this incredible platform and ICTIS for accepting our Research Paper.
+
+Engaging with other presenters/delegates, networking with all authors, and making new friends from various disciplines proved to be a profoundly enlightening experience!
+
+hashtag#research hashtag#deeplearning hashtag#ICTIS2024 hashtag#education hashtag#innovation hashtag#academic hashtag#conference hashtag#proud hashtag#ictis hashtag#researchpaper hashtag#charusat hashtag#ai hashtag#machinelearning hashtag#publication
+
+No alternative text description for this image
+
+No alternative text description for this image
+
+No alternative text description for this image
+
+No alternative text description for this image
++3
+Activate to view larger image,
+likecelebrate
+138
+24 comments
+
+like
+Like
+
+Comment
+
+Repost
+
+Send
+5,133 impressions
+View analytics
+Feed post number 11
+View Sahil Patel’s  graphic link
+Sahil PatelSahil Patel
+   • YouVerified • You
+Associate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia CertifiedAssociate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia Certified
+1yr •  1 year ago • Visible to anyone on or off LinkedIn
+
+Thrilled to share that I have received swags for having completed the Google Cloud Computing Foundations Path on Google Cloud Skill Boost as a part of the Google Cloud Study Jam (2023) organized by GDSC - Charusat.
+
+Completing this Learning Path was a challenging yet rewarding journey.
+
+Through engaging in hands-on labs and exercises, I delved into essential cloud computing concepts and honed 8 Badges using the Google Cloud Platform (GCP).
+
+Fundamental Concepts, Infrastructure, Networking, Data, ML, Managing Cloud Resources, Security, Storage, etc are some of the several aspects covered in the path.
+
+My public profile link for Google Cloud Skill boost: https://lnkd.in/da4jrMCc
+
+I am grateful to GDG CHARUSAT for offering such an amazing learning opportunity and for their communication and guidance whenever possible.
+
+hashtag#googlecloudskillsboost hashtag#gdsc hashtag#learning hashtag#experience hashtag#google hashtag#cloud hashtag#certificate hashtag#charusat hashtag#googlecloudstudyjam
+Activate to view larger image,
+No alternative text description for this image
+Activate to view larger image,
+likesupport
+86
+4 comments
+
+like
+Like
+
+Comment
+
+Repost
+
+Send
+12,757 impressions
+View analytics
+Feed post number 12
+View Sahil Patel’s  graphic link
+Sahil PatelSahil Patel
+   • YouVerified • You
+Associate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia CertifiedAssociate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia Certified
+1yr •  1 year ago • Visible to anyone on or off LinkedIn
+
+Two weeks have passed in my Internship at Digiflux Technologies Private Limited ! as a Python Developer (AI-ML) Intern. 🐍
+
+Grateful for the incredible journey so far and the opportunity to learn and contribute to meaningful projects. A big shoutout to Hemal Pandya Sir and Mansi Parikh Mam for believing in my instincts and providing valuable guidance.
+
+The warm welcome from all the amazing employees has made my experience even more enjoyable.
+
+Working with such a talented team has been inspiring, and I'm eager to continue learning and growing in this dynamic environment.
+
+Feeling blessed to be part of the Digiflux family! 💼✨ hashtag#pythondeveloper hashtag#internshipjourney hashtag#grateful hashtag#ai hashtag#ml hashtag#machinelearning hashtag#intern hashtag#digiflux hashtag#intern2024 hashtag#internship hashtag#python
+No alternative text description for this image
+
+Starting a New Position
+like
+43
+4 comments
+
+like
+Like
+
+Comment
+
+Repost
+
+Send
+1,357 impressions
+View analytics
+Feed post number 13
+View Sahil Patel’s  graphic link
+Sahil PatelSahil Patel
+   • YouVerified • You
+Associate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia CertifiedAssociate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia Certified
+1yr •  1 year ago • Visible to anyone on or off LinkedIn
+
+As the 3rd week of 2024 has started, let me embrace a small learning step I took and consistently follow for my growth and development.
+
+Beyond coding challenges, it's always about adapting, improving, and accepting change. Coding wasn't my cup of tea and is still testing my abilities but now I am taking a step in the right direction.
+
+Solved Problems for 100+ days in 2023 and got the 100 Days Badge of LeetCode. Competitive coding is more than algorithms; it's a mindset that sharpens problem-solving skills and builds resilience, applicable beyond the screen to real-world scenarios.
+
+Hope amidst every winter, we find an invincible summer awaiting.
+
+hashtag#continuouslearning hashtag#leetcode hashtag#leetcodechallenge hashtag#consistency hashtag#learningjourney hashtag#learning hashtag#motivation hashtag#codingjourney hashtag#problemsolving hashtag#dsa
+
+No alternative text description for this image
+
+No alternative text description for this image
+Activate to view larger image,
+likecelebrate
+69
+
+like
+Like
+
+Comment
+
+Repost
+
+Send
+2,034 impressions
+View analytics
+Feed post number 14
+View Sahil Patel’s  graphic link
+Sahil PatelSahil Patel
+   • YouVerified • You
+Associate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia CertifiedAssociate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia Certified
+1yr •  1 year ago • Visible to anyone on or off LinkedIn
+
+I'm pleased to share a notable milestone in my professional development—I've just completed the NPTEL Cloud Computing course, a 12-week program offered by IIT Kharagpur. With a commendable 66% score (Elite Certificate), I've gained a solid understanding of essential structures and algorithms in the field.
+
+Throughout the course, I delved into the complexities of cloud architecture, focusing on effective service and data management strategies. I took an interest in resource management and grasped the fundamental principles of cloud security. The exploration extended to open-source and commercial clouds, including cloud simulators, while staying informed about the latest developments in cutting-edge research, particularly in Fog Computing.
+
+The course provided valuable insights into VM resource allocation and monitoring. I also explored innovative areas like Cloud-Fog-Edge-enabled Analytics and delved into Serverless Computing and the FaaS model. Real-world case studies were critically analyzed, ensuring a comprehensive understanding of recent advancements.
+
+I'm excited to leverage this extensive knowledge in the dynamic field of Cloud Computing.
+
+hashtag#connections hashtag#cloudcomputing hashtag#nptel hashtag#achievements hashtag#npteljourney
+Activate to view larger image,
+timeline
+Activate to view larger image,
+likecelebrate
+86
+6 comments
+
+like
+Like
+
+Comment
+
+Repost
+
+Send
+2,227 impressions
+View analytics
+Feed post number 15
+View Sahil Patel’s  graphic link
+Sahil PatelSahil Patel
+   • YouVerified • You
+Associate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia CertifiedAssociate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia Certified
+2yr • Edited •  2 years ago • Edited • Visible to anyone on or off LinkedIn
+
+I am pleased to share that I have successfully completed the AWS Certified Cloud Practitioner Course offered by CSPIT- IT (KDPIT) at CHARUSAT and passed the University-level exam.
+
+This incredible journey wouldn't have been possible without the guidance and expertise of Prof. Sanket Suthar, whose dedication and support were invaluable throughout the course. 🙌
+
+I want to express my gratitude to the CHARUSAT for providing such an outstanding learning experience for adding cloud fundamental skills to my knowledge.🎓
+
+This course has equipped me with the essential knowledge and skills needed to explore the cloud. Its rapidly evolving nature, and involvement with other fields like Data Science and UI development makes it exciting.
+
+This will enable me to tackle more advanced cloud-related challenges and opportunities in the future.
+
+hashtag#aws hashtag#cloud hashtag#certification hashtag#learningjourney hashtag#cspit hashtag#charusat hashtag#cloudcomputing hashtag#awscloudpractitioner hashtag#awscommunity hashtag#awsacademy
+
+No alternative text description for this image
+
+No alternative text description for this image
+Activate to view larger image,
+likecelebrate
+95
+2 comments
+
+like
+Like
+
+Comment
+
+Repost
+
+Send
+Feed post number 16
+View Sahil Patel’s  graphic link
+Sahil PatelSahil Patel
+   • YouVerified • You
+Associate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia CertifiedAssociate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia Certified
+2yr • Edited •  2 years ago • Edited • Visible to anyone on or off LinkedIn
+
+Glad to announce the successful completion of my Summer Internship at L&T Technology Services . Over the past two months, I had the privilege of working in C-Sharp (C#) , where I focused on learning and building a project in ASP.NET MVC and ASP.NET Core for Web Development.
+
+Model-View-Controller architecture and Core brings numerous benefits to software development like separation of concern, code reusability, testing, flexibility and scalability, cross platform compatibility, performance etc.
+
+During my tenure at LTTS, I had the opportunity to talk with skilled professionals who generously shared their knowledge. Their guidance played a pivotal role in shaping my understanding of the industry, providing me with practical insights that will help in my future endeavours.
+
+I was consistently provided the necessary resources and support whenever I faced challenges which allowed me to grow and expand my skill set.
+
+I would like to express my sincere gratitude to my mentor, Nirav Vyas , for his invaluable guidance and unwavering support throughout the course of my internship. His expertise and mentorship have been instrumental in my personal and professional growth.
+
+I would also like to thank Dhyey Shah and Ratikant Dehury for being amazing colleagues.
+
+I would also like to extend my gratitude to LTTS for creating a conducive ambience and a work environment that nurtures growth and encourages innovation and I am thankful for the opportunities I was given during my internship.
+
+hashtag#intern hashtag#internship hashtag#webdevelopment hashtag#csharp hashtag#aspnet hashtag#mvc hashtag#ltts hashtag#professionalgrowth hashtag#aspnetcore hashtag#summerinternship
+
+No alternative text description for this image
+
+No alternative text description for this image
+Activate to view larger image,
+likecelebrate
+158
+4 comments
+
+like
+Like
+
+Comment
+
+Repost
+
+Send
+Feed post number 17
+View Sahil Patel’s  graphic link
+Sahil PatelSahil Patel
+   • YouVerified • You
+Associate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia CertifiedAssociate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia Certified
+2yr •  2 years ago • Visible to anyone on or off LinkedIn
+
+I am happy to share that I have joined the core team of the (CLDC) Charusat Learning And Development Club's AI-ML division.
+
+This student-led organization is dedicated to providing a corporate environment at the college level and helping students develop crucial skills for their future careers.
+
+As an AI-ML core team member, I am passionate about collaborating on innovative projects that leverage the latest advancements in AI and ML to solve real-world issues.
+
+With my previous experience in programming and data science, I am excited to contribute my skills and knowledge to the club and its mission of learning and development.
+
+My vision is to create an inclusive and supportive environment along with all teams where everyone can learn, grow, and succeed.
+
+I am honored to be a part of such a dynamic and motivated team. I look forward to collaborating with my fellow team members and contributing to the success of the CLDC.
+
+I want to express my gratitude to Rutik Vasani, the Club President, and this community all together for giving me this opportunity.
+
+hashtag#machinelearning hashtag#opportunity hashtag#team hashtag#community hashtag#ai hashtag#charusat hashtag#datascience hashtag#programming hashtag#experience hashtag#learninganddevelopment
+Activate to view larger image,
+graphical user interface
+Activate to view larger image,
+with Andrew Babu Augustine and 4 others
+likecelebrate
+119
+2 comments
+1 repost
+
+like
+Like
+
+Comment
+
+Repost
+
+Send
+Feed post number 18
+View Sahil Patel’s  graphic link
+Sahil PatelSahil Patel
+   • YouVerified • You
+Associate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia CertifiedAssociate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia Certified
+2yr •  2 years ago • Visible to anyone on or off LinkedIn
+
+Thrilled to share that I have completed the Cloud Engineer Learning Path on Google Cloud Skill Boost as a part of the Google Cloud Career Practitioners Pathway 2022-23(GCCP Campaign) organized by GDSC - Charusat and have received some fantastic swags as well !
+
+Completing this Cloud Engineer Learning Path was a challenging yet rewarding journey.
+
+The program covered a wide range of topics, including Cloud Computing, Cloud Infrastructure, Cloud Storage, and Networking. 
+
+With hands-on exercises and real-world scenarios, I gained practical experience in building and managing Google Cloud resources, designing and implementing cloud solutions, and troubleshooting issues in a cloud environment.
+
+My public profile link for Google Cloud Skill boost: https://lnkd.in/drCeUph5
+
+I am grateful to GDG CHARUSAT for offering such an amazing learning opportunity and their communication and guidance whenever possible.
+
+hashtag#googlecloudskillsboost hashtag#gdsc hashtag#learning hashtag#experience hashtag#google hashtag#cloud hashtag#certificate hashtag#charusat
+
+No alternative text description for this image
+
+No alternative text description for this image
+Activate to view larger image,
+likecelebrate
+87
+1 comment
+
+like
+Like
+
+Comment
+
+Repost
+
+Send
+Feed post number 19
+View Sahil Patel’s  graphic link
+Sahil PatelSahil Patel
+   • YouVerified • You
+Associate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia CertifiedAssociate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia Certified
+2yr •  2 years ago • Visible to anyone on or off LinkedIn
+
+I am happy to share that I have successfully completed my Internship training at Motorola Solutions.
+
+I covered a wide range of technologies like Angular, Node, Express, SQL, etc. Thus acquiring various front-end and back-end development, database management, and project management skills.
+
+This was an exceptional chance to gain hands-on experience in developing and deploying application software following established standards, organizing and participating in design reviews, group discussions, collaborating, etc.
+
+Participating in this internship program has provided me with an excellent opportunity to learn and grow both professionally and personally.
+
+I want to thank my mentors Rohan Sahu, Vinay Pulijala Sir, Deepthi Kommenini Mam, Praneeth, Sunil Sir, and all the others for mentoring me throughout the journey.
+
+Many thanks to Ritesh Patel, Dr. Ashwin Makwana Sir for guiding me throughout this process and assisting me in achieving this position.
+
+Also, I would like to express my gratitude to my colleagues for a supportive and engaging environment.
+
+Looking forward to more such enriching experiences.
+
+
+hashtag#motorolasolutions hashtag#teambuilding hashtag#opportunity hashtag#learning hashtag#internship hashtag#training hashtag#motorola hashtag#charusat
+
+No alternative text description for this image
+
+No alternative text description for this image
+
+No alternative text description for this image
+Activate to view larger image,
+likecelebrate
+77
+1 comment
+
+like
+Like
+
+Comment
+
+Repost
+
+Send
+Feed post number 20
+View Sahil Patel’s  graphic link
+Sahil PatelSahil Patel
+   • YouVerified • You
+Associate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia CertifiedAssociate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia Certified
+2yr •  2 years ago • Visible to anyone on or off LinkedIn
+
+Glad to be a part of Maker Fest Vadodara 2023.
+
+The event was organized by Yuvalay Electronics Lab (renamed as Yuvalay MakerSpace) , Vadodara Innovation Council , co-hosted by the The Maharaja Sayajirao University of Baroda , an initiative of Motwani Jadeja Foundation on 28th and 29th Jan 2023.
+
+It was a wonderful chance to meet makers, innovators, and enthusiasts. Even though I was not an innovator, I volunteered as a content writer in interviewing , analyzing and writing about the different wonderful innovations by the awesome makers. I was fascinated by seeing ideas come to life and meeting people of great feat!
+
+Huge thanks to H. T. Patel sir and Vishakha Laumas for providing and entrusting such an excellent opportunity.
+
+I am also profoundly thankful to KALPIT SHAH for his priceless support in crafting content.
+
+And special thanks to Dr. Ashwin Makwana for constant support.
+
+hashtag#learning hashtag#team hashtag#project hashtag#innovation hashtag#event hashtag#makerfest hashtag#opportunity hashtag#contentwriter hashtag#creativity hashtag#technology
+
+No alternative text description for this image
+
+No alternative text description for this image
+
+No alternative text description for this image
+
+No alternative text description for this image
++2
+Activate to view larger image,
+with Kalpit Shah
+likecelebrate
+56
+2 comments
+
+like
+Like
+
+Comment
+
+Repost
+
+Send
+Feed post number 21
+View Sahil Patel’s  graphic link
+Sahil PatelSahil Patel
+   • YouVerified • You
+Associate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia CertifiedAssociate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia Certified
+2yr •  2 years ago • Visible to anyone on or off LinkedIn
+
+I am happy to share that I attended the third edition of the Indian Symposium on Machine Learning (IndoML) hosted by the Indian Institute of Technology Gandhinagar (IITGN) in collaboration with IIT Kharagpur between 15-17 December 2022.
+
+Through this engagement with leading research groups and experts across the country, I had the chance to learn, gain perspective and get fascinated.
+
+This enhanced my knowledge in the world of ML, network with peers ( Experts, Researchers, and Students), and sought their guidance.
+
+I want to thank the Indian Institute of Technology Gandhinagar for this excellent opportunity. I also want to extend my gratitude to my professors Ritesh Patel, and Dr. Ashwin Makwana who made me aware of this insightful opportunity.
+
+I would also like to thank all speakers for sharing their experiences and talking about their work. 
+
+I was awed by the ingenuity and innovative breadth of all ideas.
+
+hashtag#iitgandhinagar hashtag#research hashtag#learning hashtag#connections hashtag#indoml hashtag#symposium hashtag#indoml2022 hashtag#ai hashtag#machinelearning
+
+No alternative text description for this image
+
+No alternative text description for this image
+
+No alternative text description for this image
+
+No alternative text description for this image
++2
+Activate to view larger image,
+with Sapnil Patel
+likecelebrate
+74
+2 comments
+
+like
+Like
+
+Comment
+
+Repost
+
+Send
+Feed post number 22
+View Sahil Patel’s  graphic link
+Sahil PatelSahil Patel
+   • YouVerified • You
+Associate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia CertifiedAssociate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia Certified
+2yr • Edited •  2 years ago • Edited • Visible to anyone on or off LinkedIn
+
+I recently participated in the 'Codepie 2.0' Competitive programming Contest organized by the Faculty of Technology and Engineering in association with CodeChef held on the 14th of October.
+
+This contest taught me so much. I thank my Team members Shail Shah and POOJAN PATEL for such amazing teamwork. From getting TLE errors in all problems to solving half the problems in the contest, we have come a long way. 
+
+Hoping to continue this motivation, be consistent in participating, and do better in the future.
+
+hashtag#codechef hashtag#codepie hashtag#learning hashtag#competitiveprogramming hashtag#charusat hashtag#experience
+Activate to view larger image,
+No alternative text description for this image
+Activate to view larger image,
+like
+53
+
+like
+Like
+
+Comment
+
+Repost
+
+Send
+Feed post number 23
+View Sahil Patel’s  graphic link
+Sahil PatelSahil Patel
+   • YouVerified • You
+Associate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia CertifiedAssociate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia Certified
+3yr • Edited •  3 years ago • Edited • Visible to anyone on or off LinkedIn
+
+Hackathon projects are great for increasing professional creativity and self-expression by using the most innovative and modern technological solutions. 
+
+Just participation in Hacking Marathon Concept strengthens our networks, connections, collaborations, and innovations while boosting our inspiration, creativity, and productivity.
+
+Recently my team and I participated in Education Department, Govt. of Gujarat organized Hackathon 2022 Regional Round under Azadi ka Amrit Mahotsav hosted by CHARUSAT UNIVERSITY. 
+
+Our Problem Statement was Chatbot for GTU. We used RASA for the framework, Flutter for the app, and Firebase for the database, and almost completed the project within the time frame.
+
+Thanks to all the Judges, Coordinators, and other Participants for making this 36-hour-long mega Hackathon an amazing experience. 
+
+My Team
+Pranay Patel | Het Pathak | Nisarg Shah |
+
+hashtag#charusat hashtag#cspit hashtag#hackathon hashtag#azadikaamritmahotsav hashtag#ssip hashtag#gujarat hashtag#india hashtag#machinelearning hashtag#flutter hashtag#rasa hashtag#innovation hashtag#experience
+
+No alternative text description for this image
+
+No alternative text description for this image
+Activate to view larger image,
+with Pranay Patel and 1 other
+like
+47
+8 comments
+
+like
+Like
+
+Comment
+
+Repost
+
+Send
+Feed post number 24
+View Sahil Patel’s  graphic link
+Sahil PatelSahil Patel
+   • YouVerified • You
+Associate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia CertifiedAssociate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia Certified
+3yr •  3 years ago • Visible to anyone on or off LinkedIn
+
+Glad to share that I recently completed my Summer Internship at L&T Energy-CarbonLite Solutions where i focused on building a project with the Concepts of NLP in Machine Learning and also worked on ASP.NET for Web Development.
+
+I am thankful to my Mentor, Astha Ajmeri for guiding me throughout the course of the internship. I am also thankful for such great ambience and support from the place itself.
+
+
+hashtag#internship hashtag#summerinternship hashtag#webdevelopment hashtag#machinelearning hashtag#intern hashtag#aspnet
+
+No alternative text description for this image
+
+No alternative text description for this image
+Activate to view larger image,
+like
+55
+3 comments
+
+like
+Like
+
+Comment
+
+Repost
+
+Send
+Feed post number 25
+View Sahil Patel’s  graphic link
+Sahil PatelSahil Patel
+   • YouVerified • You
+Associate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia CertifiedAssociate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia Certified
+3yr • Edited •  3 years ago • Edited • Visible to anyone on or off LinkedIn
+
+Participated in a CodeChef competitive programming contest organised by CE AND CSE department of CSPIT , CHARUSAT (Charotar University of Science and Technology) in association with CodeChef on 25th March, 2022.
+
+-glad to take part in this great experience with my team and learning about the competitive skills and logic needed till the last minute to finish problems.
+
+
+
+hashtag#charusat hashtag#university hashtag#competitiveprogramming hashtag#codechef hashtag#cspit hashtag#c++ hashtag#contest hashtag#coding
+Your document has finished loading
+likecelebrate
+51
+1 comment
+
+like
+Like
+
+Comment
+
+Repost
+
+Send
+Feed post number 26
+View Sahil Patel’s  graphic link
+Sahil PatelSahil Patel
+   • YouVerified • You
+Associate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia CertifiedAssociate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia Certified
+3yr •  3 years ago • Visible to anyone on or off LinkedIn
+
+I'm glad to share that I had successfully completed two 7-day Bootcamps titled "BASICS OF WEB DEVELOPMENT" and "PYTHON AND MACHINE LEARNING"organised by DevTown in December 2021 - January 2022. In collaboration with Microsoft Learn Student Ambassadors , Microsoft Learn teams and Google Developers Group Ranchi. Thank you devtown.
+
+-- Learned from foundations to some depth about javascript ,css, implement web development features etc.
+
+--Made a simple Machine Learning Project in python on 'Housing Price Prediction' and achieved about 70% accuracy in predicting price of houses on a sample csv dataset created by user of around 550 values using Linear Regression Algorithm , by learning and using python libraries like numpy,panda,seaborn,sklearn,mathplotlib etc.
+
+github link for the project:- https://lnkd.in/epCEpU7u
+
+hashtag#bootcamp hashtag#webdevelopment hashtag#javascript hashtag#nodejs hashtag#python hashtag#machinelearning hashtag#experience
+Your document has finished loading
+like
+11
+
+like
+Like
+
+Comment
+
+Repost
+
+Send
+Feed post number 27
+View Sahil Patel’s  graphic link
+Sahil PatelSahil Patel
+   • YouVerified • You
+Associate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia CertifiedAssociate Software Engineer @Digiflux Technologies | AI - ML | Full Stack | Cloud | Aspiring Data Scientist | 1x Nvidia Certified
+3yr •  3 years ago • Visible to anyone on or off LinkedIn
+
+Late post to an informative and practical three day workshop ("Recent Trends in Front-End Web Technologies: ReactJS ") on ReactJS : the java script library for building UI, conducted in March by CHARUSAT University and GUJCOST .Thereby learning fundamentals of and working with Routing, React, Javascript, Web app, VScode, NodeJS etc.
+
+hashtag#reactjs hashtag#javascript hashtag#charusat

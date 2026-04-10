@@ -1,0 +1,144 @@
+
+.otherContainer {
+    width: 900px;
+    height: 100%;
+  }
+  
+  .otherContainer h3 {
+    font-size: 30px;
+    color: var(--dimWhite-color);
+    text-align: center;
+    margin-bottom: 50px;
+  
+  }
+  
+  .otherCollection {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates three equally sized columns */
+    grid-gap: 15px;
+   
+  }
+  
+  .otherContent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #112240;
+    color: rgba(255, 255, 255, 0.907);
+    padding: 20px;
+    gap: 25px;
+    position: relative;
+    transition: top 0.3s ease;
+  }
+  .otherContent:hover {
+    top: -8px;
+    transition: top 0.3s ease;
+  }
+  .otherContentHead {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .otherContentHead .headPart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .otherContentHead  .folderSvg {
+    width: 40px;
+    height: 40px;
+    stroke: var(--primary-color);
+  
+  }
+  .otherContent h4 a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .otherContent h4 a:visited {
+    color: inherit;
+  }
+  
+  
+  
+  .otherContent h4:hover {
+    color: var(--primary-color);
+  }
+  
+  .otherContent h4 {
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    width: fit-content;
+   
+  }
+  
+  .otherContent p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .used li {
+    display: inline-block;
+    padding: 3px 8px;
+    font-size: 10px;
+    background: rgba(254, 254, 254, 0.611);
+    border-radius: 50px;
+    font-weight: 700;
+    color: var(--heading-color);
+    list-style-type: none;
+    white-space: nowrap;
+  }
+  
+  .used {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .otherContent img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  .otherContentIcon {
+    display: flex;
+    gap: 15px;
+  }
+  .otherContentIcon svg{
+    width: 22px;
+    height: 22px;
+    stroke: var(--primary-color);
+   
+  }
+
+  @media only screen and (max-width: 1075px) {
+    .otherCollection {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+    
+  }
+  @media only screen and (max-width:600px) {
+    .otherContainer {
+      width: 100%;
+    }
+    .otherCollection {
+      grid-template-columns: repeat(1, 1fr); 
+    }
+    .otherContent:hover {
+      top: 0px;
+      transition: top 0.3s ease;
+    }
+    .otherContent h4:hover {
+      color: rgba(255, 255, 255, 0.907);
+    }
+    .otherContainer h3 {
+      font-size: 25px;
+      margin-bottom: 30px;
+    
+    }
+  }

@@ -1,0 +1,41 @@
+[
+    {
+        "Title": "Machine Learning Research Papers",
+        "Description": "Published research on deep learning applications in educational assessment and computer vision, presented at international conferences.",
+        "Skills": [
+            "Deep Learning",
+            "Research",
+            "Academic Writing",
+            "Conference Presentation",
+            "BERT",
+            "YOLOv8"
+        ],
+        "Code": "https://github.com/patelsahil2k03/research-papers",
+        "Image": ""
+    },
+    {
+        "Title": "Football Tournament Participation",
+        "Description": "Participated in National West Zone Inter-University Football Tournament representing my university in 2022 and 2023.",
+        "Skills": [
+            "Teamwork",
+            "Leadership",
+            "Sports",
+            "Competition"
+        ],
+        "Code": "#",
+        "Image": ""
+    },
+    {
+        "Title": "Google Cloud Certifications",
+        "Description": "Completed Google Cloud Study Jams and GCCP campaign, gaining expertise in cloud computing and machine learning platforms.",
+        "Skills": [
+            "Google Cloud",
+            "Cloud Computing",
+            "Machine Learning",
+            "Certification"
+        ],
+        "Code": "#",
+        "Image": ""
+    }
+]
+

@@ -1,0 +1,123 @@
+
+.experienceContainer {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .expContainer {
+    
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+    grid-gap: 20px; 
+    
+  }
+  
+  .expBox {
+    width: 100%;
+    height: 100%;
+    outline: 1px solid var(--primary-color);
+    border-radius: 6px;
+    color: var(--light-color);
+    padding: 20px 20px;
+ 
+background: rgba(255, 255, 255, 0);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+  }
+  
+  .expBox h4 {
+    font-size: 20px;
+    color: var(--dimWhite-color);
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+  
+  .expBox h5 {
+    font-size: 16px;
+    color: #64ffdbcc;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+  .dateLocation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   gap: 8px;
+    font-size: 14px;
+   margin-bottom: 20px;
+    font-weight: 500;
+  }
+  .jobLocation{
+   font-size: 16px;
+  }
+  
+  .hyperLink{
+    font-weight: 700;
+  }
+
+  .expBox ul li {
+    position: relative;
+    list-style-type: none;
+    padding-left: 30px;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+  
+  .expBox ul li:before {
+    content: "▹";
+    position: absolute;
+    left: 0px;
+    color: var(--primary-color);
+  }
+
+  @media only screen and (max-width: 768px) {
+    .experienceContainer {
+      width: 100%;
+    }
+    .expContainer {
+    grid-template-columns: 1fr ; /* Two columns with equal width */
+    grid-gap: 20px; 
+    }
+    
+    .expBox {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 550px) {
+    .experienceContainer {
+      width: 100%;
+      gap: 30px;
+    }
+    .expBox h4 {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+    
+    .expBox h5 {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+    
+    .dateLocation {
+      font-size: 12px;
+      margin-bottom: 15px;
+      gap: 4px;
+    }
+    
+    .expBox ul li {
+      padding-left: 20px;
+      font-size: 14px;
+    }
+  }

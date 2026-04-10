@@ -1,0 +1,79 @@
+[
+    {
+        "Title": "Lip Reading Word Classification & Fruit Detection",
+        "Description": "Developed a CNN-based lip-reading model achieving 93% training accuracy and built a mobile app for fruit & vegetable classification with 88% accuracy.",
+        "Skills": [
+            "Python",
+            "CNN",
+            "Flutter",
+            "Deep Learning",
+            "TensorFlow",
+            "Computer Vision",
+            "Mobile Development"
+        ],
+        "Code": "https://github.com/patelsahil2k03/lip-reading-project",
+        "Image": ""
+    },
+    {
+        "Title": "Meal Subscription Chatbot & Sales Forecasting",
+        "Description": "Designed an AI chatbot for meal subscriptions using LangChain and built a sales forecasting model with 93.17% accuracy using CNN+LSTM.",
+        "Skills": [
+            "Next.js",
+            "LangChain",
+            "OpenAI",
+            "Python",
+            "MongoDB",
+            "CNN",
+            "LSTM",
+            "Time Series",
+            "AWS Sagemaker"
+        ],
+        "Code": "https://github.com/patelsahil2k03/meal-chatbot",
+        "Image": ""
+    },
+    {
+        "Title": "Pre-Exam Question Paper Quality Test",
+        "Description": "Developed an AI-driven system to categorize and score exam papers, achieving 98.04% accuracy using advanced NLP techniques.",
+        "Skills": [
+            "Python",
+            "BERT",
+            "LSTM",
+            "Bi-LSTM",
+            "NLP",
+            "Deep Learning",
+            "GloVe",
+            "SkipGram"
+        ],
+        "Code": "https://github.com/patelsahil2k03/question-paper-analysis",
+        "Image": ""
+    },
+    {
+        "Title": "Tuition Classes Management System",
+        "Description": "Engineered a comprehensive web app for student, faculty, and admin management with secure authentication and optimized workflows.",
+        "Skills": [
+            "TypeScript",
+            "Angular",
+            "Node.js",
+            "MongoDB",
+            "CSS",
+            "Git",
+            "Authentication"
+        ],
+        "Code": "https://github.com/patelsahil2k03/vcc-point",
+        "Image": ""
+    },
+    {
+        "Title": "Small Bird Detection in Aerial Imagery",
+        "Description": "Enhanced small object detection using YOLOv8 architecture for aerial imagery, published in AIP ICRAIC 2024 conference.",
+        "Skills": [
+            "Python",
+            "YOLOv8",
+            "Computer Vision",
+            "Deep Learning",
+            "Object Detection",
+            "Research"
+        ],
+        "Code": "https://github.com/patelsahil2k03/bird-detection-yolo",
+        "Image": ""
+    }
+]
