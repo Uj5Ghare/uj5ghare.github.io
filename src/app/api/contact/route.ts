@@ -11,24 +11,23 @@ export async function POST(req: NextRequest) {
   };
 
   try {
-  try {
     // Handle preflight requests
-  if (req.method === 'OPTIONS') {
-    return new NextResponse(null, { status: 200, headers });
-  }
+    if (req.method === 'OPTIONS') {
+      return new NextResponse(null, { status: 200, headers });
+    }
 
-  if (req.method !== 'POST') {
-    return NextResponse.json({ error: 'Method not allowed' }, { status: 405, headers });
-  }
+    if (req.method !== 'POST') {
+      return NextResponse.json({ error: 'Method not allowed' }, { status: 405, headers });
+    }
 
-  let body;
-  try {
-    body = await req.json();
-  } catch (error) {
-    return NextResponse.json({ error: 'Invalid JSON' }, { status: 400, headers });
-  }
+    let body;
+    try {
+      body = await req.json();
+    } catch (error) {
+      return NextResponse.json({ error: 'Invalid JSON' }, { status: 400, headers });
+    }
 
-  const { name, email, subject, message } = body;
+    const { name, email, subject, message } = body;
 
     if (!name || !email || !subject || !message) {
       return NextResponse.json({ error: 'All fields are required.' }, { status: 400, headers });
