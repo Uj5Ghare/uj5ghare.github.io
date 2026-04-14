@@ -2,11 +2,36 @@ import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
 export async function POST(req: NextRequest) {
+  // Set CORS headers
+  const headers = {
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Methods': 'POST, OPTIONS',
+    'Access-Control-Allow-Headers': 'Content-Type',
+    'Content-Type': 'application/json',
+  };
+
   try {
-    const { name, email, subject, message } = await req.json();
+  try {
+    // Handle preflight requests
+  if (req.method === 'OPTIONS') {
+    return new NextResponse(null, { status: 200, headers });
+  }
+
+  if (req.method !== 'POST') {
+    return NextResponse.json({ error: 'Method not allowed' }, { status: 405, headers });
+  }
+
+  let body;
+  try {
+    body = await req.json();
+  } catch (error) {
+    return NextResponse.json({ error: 'Invalid JSON' }, { status: 400, headers });
+  }
+
+  const { name, email, subject, message } = body;
 
     if (!name || !email || !subject || !message) {
-      return NextResponse.json({ error: 'All fields are required.' }, { status: 400 });
+      return NextResponse.json({ error: 'All fields are required.' }, { status: 400, headers });
     }
 
     const transporter = nodemailer.createTransport({
@@ -44,9 +69,9 @@ export async function POST(req: NextRequest) {
       `,
     });
 
-    return NextResponse.json({ success: true });
+    return NextResponse.json({ success: true }, { headers });
   } catch (err) {
     console.error('Contact form error:', err);
-    return NextResponse.json({ error: 'Failed to send message. Please try again.' }, { status: 500 });
+    return NextResponse.json({ error: 'Failed to send message. Please try again.' }, { status: 500, headers });
   }
 }
