@@ -1,3 +1,4 @@
+
 export interface Project {
   id: string;
   title: string;
@@ -74,19 +75,48 @@ export const projects: Project[] = [
     ],
   },
   {
+    id: 'shopstack-microservices',
+    title: 'ShopStack-Microservices-Project',
+    description: 'ShopStack: E-commerce microservices with GitOps, monitoring, and containerized CI/CD deployment with kubernetes on ArgoCD.',
+    technologies: ['Git', 'kubernetes', 'docker-compose', 'kops', 'microservices-architecture', 'hadolint', 'trivy', 'github-workflows', 'ghcr-registry'],
+    github: 'https://github.com/Uj5Ghare/ShopStack-Microservices-Project',
+    category: 'devops',
+    featured: true,
+    metrics: [
+      { label: 'CI/CD', value: 'GITHUB Actions' },
+      { label: 'Registry', value: 'GHCR' },
+      { label: 'Orchestration', value: 'Kubernetes' },
+    ],
+  },
+  {
+    id: 'grapl-observability-stack',
+    title: 'GRAPL-Observability-Stack',
+    description: 'A complete on-premises monitoring and observability stack. Collect metrics from your servers, visualize them in dashboards, store and search logs, and get alerts in Slack.',
+    technologies: ['Grafana', 'Prometheus', 'Loki', 'Node-Exporter', 'Slack', 'docker-compose', 'Nginx', 'FluentBit'],
+    github: 'https://github.com/Uj5Ghare/GRAPL-Observability-Stack',
+    category: 'devops',
+    featured: true,
+    metrics: [
+      { label: 'CI/CD', value: 'GITHUB Actions' },
+      { label: 'Registry', value: 'GHCR' },
+      { label: 'Orchestration', value: 'Kubernetes' },
+    ],
+  },
+  {
     id: 'go-web-app',
     title: 'Go Web App CI/CD Pipeline',
     description: 'Implemented a full CI/CD pipeline and workflow to automate code quality checks, application builds, vulnerability scanning, cloud deployment, and monitoring for a Go web application.',
     technologies: ['Git', 'GitHub Actions', 'GitLab CI/CD', 'Docker', 'EKS', 'Helm', 'Terraform', 'PM2', 'Nginx', 'SonarQube', 'Trivy', 'Zabbix'],
     github: 'https://github.com/Uj5Ghare/Go-Web-App',
     category: 'devops',
-    featured: true,
+    featured: false,
     metrics: [
       { label: 'Pipelines', value: '2' },
       { label: 'Scanning', value: 'Trivy + Sonar' },
       { label: 'Monitoring', value: 'Zabbix' },
     ],
   },
+
   {
     id: 'argocd-canary',
     title: 'ArgoCD Canary Deployment',
