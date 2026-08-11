@@ -120,16 +120,13 @@ uj5ghare.github.io/
 
 ### 5. **Projects Showcase**
 - **10+ DevOps Projects**:
-  1. **ZIKHARA AI SAAS** - Kubernetes Migration & GitOps
-  2. **PREPLEX** - AWS Infrastructure & CI/CD
-  3. **Vegastack** - Terraform & Ansible Automation
-  4. **E2E EKS DevSecOps** - Full Security Pipeline
-  5. **Go Web App CI/CD** - Multi-Platform Deployment
-  6. **ArgoCD Canary** - Advanced Deployment Strategies
-  7. **Diabetes MLOps** - ML on Kubernetes
-  8. **Django on EKS** - Full Stack Deployment
-  9. **Bash Scripting** - Server Hardening
-  10. **MERN Stack** - Container Orchestration
+  1. **E2E EKS DevSecOps** - Full Security Pipeline
+  2. **Go Web App CI/CD** - Multi-Platform Deployment
+  3. **ArgoCD Canary** - Advanced Deployment Strategies
+  4. **Diabetes MLOps** - ML on Kubernetes
+  5. **Django on EKS** - Full Stack Deployment
+  6. **Bash Scripting** - Server Hardening
+  7. **MERN Stack** - Container Orchestration
 - Filterable by technology/category
 - GitHub links, live demos
 - Detailed metrics and achievements

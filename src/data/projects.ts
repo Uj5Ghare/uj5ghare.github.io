@@ -19,48 +19,6 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: 'zikhara-ai',
-    title: 'ZIKHARA AI SAAS',
-    description: 'Migrated all environments from EC2 deployments to Kubernetes, managed staging, pre-prod, and production using GitOps with ArgoCD, implemented observability with Grafana, Prometheus, Loki, and CloudWatch, and built CI/CD pipelines with AWS DevOps Services.',
-    technologies: ['AWS', 'Kubernetes', 'Kops', 'Helm', 'ArgoCD', 'Slack', 'Prometheus', 'Grafana', 'Loki'],
-    demo: 'https://zikhara.ai',
-    category: 'production',
-    featured: true,
-    metrics: [
-      { label: 'Environments', value: '3' },
-      { label: 'Strategy', value: 'GitOps' },
-      { label: 'Observability', value: 'Full Stack' },
-    ],
-  },
-  {
-    id: 'preplex',
-    title: 'PREPLEX',
-    description: 'Deployed the project from scratch on AWS, including VPC setup and Docker container deployment on EC2, managed and monitored non-prod and production environments, handled database backups on S3 and S3 Glacier for cost savings, and oversaw the release process using GitLab CI/CD with Slack-based alerting.',
-    technologies: ['AWS', 'GitLab CI/CD', 'Slack', 'Docker', 'Nginx', 'ELK Stack'],
-    demo: 'https://preplex.app',
-    category: 'production',
-    featured: true,
-    metrics: [
-      { label: 'Infra', value: 'AWS VPC' },
-      { label: 'Storage', value: 'S3 + Glacier' },
-      { label: 'Alerting', value: 'Slack' },
-    ],
-  },
-  {
-    id: 'vegastack',
-    title: 'Vegastack',
-    description: 'Created Terraform manifests with AWS S3 backend to automatically provision spot instances and execute Ansible playbooks for testing blog tutorials on vegastack.com.',
-    technologies: ['AWS', 'Terraform', 'Ansible', 'Git', 'GitHub Actions', 'Server-Hardening', 'Zabbix'],
-    demo: 'https://vegastack.com',
-    category: 'production',
-    featured: true,
-    metrics: [
-      { label: 'IaC', value: 'Terraform' },
-      { label: 'Config Mgmt', value: 'Ansible' },
-      { label: 'Monitoring', value: 'Zabbix' },
-    ],
-  },
-  {
     id: 'e2e-eks-devsecops',
     title: 'E2E EKS Three-Tier DevSecOps',
     description: 'End-to-end DevSecOps project covering everything from setting up tools to deploying a Three-Tier app on EKS, ensuring data persistence, and implementing full CI/CD pipelines with security scanning.',
