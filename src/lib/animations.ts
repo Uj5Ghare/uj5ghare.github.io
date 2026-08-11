@@ -238,3 +238,54 @@ export const getMotionProps = () => {
   }
   return {};
 };
+
+// ============================================================
+// design.md §6.2 — Motion tokens
+// ============================================================
+
+// Entrance ease: easeOutQuint — fast start, soft settle
+export const easeEntrance = [0.22, 1, 0.36, 1];
+
+export const durIn = 0.4;
+export const durOut = 0.6;
+
+// design.md §6.8 — Full-bleed indigo section fill sweep
+export const fillSweep: Variants = {
+  hidden: { scaleX: 0, transformOrigin: 'left' },
+  visible: {
+    scaleX: 1,
+    transformOrigin: 'left',
+    transition: { duration: 0.6, ease: easeEntrance },
+  },
+};
+
+// Gentle drift for background blobs (static motion, never decorative spin)
+export const blobDrift: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { duration: 1.2, ease: 'easeOut' },
+  },
+};
+
+// Card entrance with a subtle pop
+export const cardReveal: Variants = {
+  hidden: { opacity: 0, y: 24, scale: 0.98 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { duration: durIn, ease: easeEntrance },
+  },
+};
+
+// Spring-based panel entrance (mockup window)
+export const panelSpring = {
+  hidden: { opacity: 0, scale: 0.82, y: 20 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    transition: { type: 'spring', damping: 25, stiffness: 300 } as never,
+  },
+};

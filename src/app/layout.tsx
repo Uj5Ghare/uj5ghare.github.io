@@ -31,27 +31,28 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <body className={inter.className}>
         <Toaster
           position="bottom-right"
           toastOptions={{
             duration: 4000,
             style: {
-              background: '#1e293b',
-              color: '#f1f5f9',
-              border: '1px solid #334155',
+              background: '#ffffff',
+              color: '#242D51',
+              border: '1px solid #EFEDFB',
+              boxShadow: '0 12px 32px -12px rgba(88, 58, 203, 0.25)',
             },
             success: {
               iconTheme: {
-                primary: '#3b82f6',
-                secondary: '#f1f5f9',
+                primary: '#583ACB',
+                secondary: '#ffffff',
               },
             },
             error: {
               iconTheme: {
                 primary: '#ef4444',
-                secondary: '#f1f5f9',
+                secondary: '#ffffff',
               },
             },
           }}

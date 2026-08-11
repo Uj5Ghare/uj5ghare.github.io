@@ -1,228 +1,399 @@
 'use client';
 
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Button } from '@/components/ui/Button';
-import { Badge } from '@/components/ui/Badge';
-import { personalInfo, stats, social } from '@/data';
-import { Github, Linkedin, Mail, Download, ExternalLink } from 'lucide-react';
-import { 
-  fadeInUp, 
-  fadeInDown, 
-  staggerContainer, 
-  staggerItem,
-  scaleIn 
-} from '@/lib/animations';
-import { useScrollAnimation, useCountAnimation } from '@/lib/hooks';
+import React, { useState, useEffect, useRef } from 'react';
+import Image from 'next/image';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import { personalInfo, social } from '@/data';
+import {
+  Github, Linkedin, Mail, Download, ExternalLink, MapPin,
+  ArrowRight, Sparkles,
+} from 'lucide-react';
+import { easeEntrance, durOut } from '@/lib/animations';
 
-export function Hero() {
-  const { ref, inView } = useScrollAnimation({ triggerOnce: true, threshold: 0.05 });
-  
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+const tickerItems = [
+  '2+ Years Experience', '15+ Projects Shipped', '4+ Client Projects',
+  '$6000+/yr AWS Savings', '3 Companies', '30+ Technologies',
+  'Kubernetes at Scale', '3+ Certifications', 'GitOps Practitioner',
+];
+
+function TypingAnimation({ roles }: { roles: string[] }) {
+  const [index, setIndex] = useState(0);
+  const [text, setText] = useState('');
+  const [deleting, setDeleting] = useState(false);
+
+  useEffect(() => {
+    const current = roles[index % roles.length];
+    const speed = deleting ? 35 : 80;
+    const t = setTimeout(() => {
+      if (!deleting) {
+        if (text.length < current.length) {
+          setText(current.slice(0, text.length + 1));
+        } else {
+          setTimeout(() => setDeleting(true), 2000);
+        }
+      } else if (text.length > 0) {
+        setText(current.slice(0, text.length - 1));
+      } else {
+        setDeleting(false);
+        setIndex(i => i + 1);
+      }
+    }, speed);
+    return () => clearTimeout(t);
+  }, [text, deleting, index, roles]);
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-1/2 -right-1/2 w-full h-full bg-gradient-to-br from-blue-400/10 to-cyan-400/10 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute -bottom-1/2 -left-1/2 w-full h-full bg-gradient-to-tr from-orange-400/10 to-blue-400/10 rounded-full blur-3xl animate-pulse delay-1000" />
-      </div>
+    <span className="inline-flex items-center gap-1.5">
+      <motion.span
+        className="inline-block w-1.5 h-6 sm:h-7 rounded-full bg-violet-500"
+        animate={{ opacity: [1, 0.2, 1] }}
+        transition={{ duration: 0.9, repeat: Infinity, ease: 'easeInOut' }}
+      />
+      <span className="text-violet-600 font-semibold">{text}</span>
+    </span>
+  );
+}
 
-      <motion.div 
-        ref={ref}
-        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10"
-        initial="visible"
-        animate="visible"
-        variants={staggerContainer}
+function Blob({ className, color, delay }: { className: string; color: string; delay: number }) {
+  return (
+    <motion.div
+      className={`blob ${className}`}
+      style={{ background: color }}
+      initial={{ opacity: 0, scale: 0.6 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 1.4, ease: easeEntrance, delay }}
+    >
+      <div className="w-full h-full animate-blob-pulse" style={{ animationDelay: `${delay}s` }} />
+    </motion.div>
+  );
+}
+
+export function Hero() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const scrollToSection = (id: string) =>
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+
+  // Parallax on scroll — content exits up, panel drifts down slightly
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ['start start', 'end start'],
+  });
+  const contentY = useTransform(scrollYProgress, [0, 1], [0, -60]);
+  const panelY = useTransform(scrollYProgress, [0, 1], [0, 90]);
+  const opacity = useTransform(scrollYProgress, [0, 0.7], [1, 0.15]);
+
+  const doubled = [...tickerItems, ...tickerItems];
+
+  return (
+    <section
+      id="home"
+      ref={sectionRef}
+      className="relative min-h-screen overflow-hidden flex flex-col bg-cream"
+    >
+      {/* Warm gradient wash */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background:
+            'radial-gradient(60% 50% at 85% 10%, rgba(163,163,234,0.25), transparent 70%),' +
+            'radial-gradient(50% 45% at 10% 90%, rgba(252,227,213,0.55), transparent 70%)',
+        }}
+      />
+
+      {/* Blobs — design.md §4.1 */}
+      <Blob className="top-24 left-[8%] w-40 h-40 opacity-50" color="#FCE3D5" delay={0.2} />
+      <Blob className="bottom-32 left-[30%] w-28 h-28 opacity-40" color="#A3A3EA" delay={0.7} />
+      <Blob className="top-[22%] right-[36%] w-24 h-24 opacity-40" color="#EFEDFB" delay={1.1} />
+
+      {/* Content */}
+      <motion.div
+        style={{ y: contentY, opacity }}
+        className="flex-1 flex items-center relative z-10"
       >
-        <div className="text-center space-y-8">
-          {/* Badge */}
-          <motion.div 
-            className="flex justify-center"
-            variants={fadeInDown}
-          >
-            <Badge variant="secondary" size="lg" className="animate-bounce">
-              <span className="flex items-center gap-2">
-                <span className="w-2 h-2 bg-orange-600 rounded-full animate-pulse" />
-                Available for opportunities
-              </span>
-            </Badge>
-          </motion.div>
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 py-28 w-full">
+          <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-12 lg:gap-20 items-center">
 
-          {/* Name & Title */}
-          <motion.div className="space-y-4" variants={staggerItem}>
-            <motion.h1 
-              className="text-5xl sm:text-6xl lg:text-7xl font-bold text-slate-900 tracking-tight"
-              variants={fadeInUp}
+            {/* ---- Left column ---- */}
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.12, delayChildren: 0.15 } } }}
+              className="space-y-7 order-2 lg:order-1"
             >
-              Hi, I&apos;m{' '}
-              <span className="bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 bg-clip-text text-transparent animate-gradient">
-                {personalInfo.name}
-              </span>
-            </motion.h1>
-            
-            <motion.p 
-              className="text-xl sm:text-2xl lg:text-3xl font-semibold text-slate-700"
-              variants={fadeInUp}
-            >
-              {personalInfo.title} @ {personalInfo.company}
-            </motion.p>
-
-            <motion.div 
-              className="flex flex-wrap items-center justify-center gap-3 text-lg sm:text-xl text-slate-600"
-              variants={fadeInUp}
-            >
-              <span>⚽ Footballer</span>
-              <span className="hidden sm:inline">•</span>
-              <span>📊 Data Scientist</span>
-              <span className="hidden sm:inline">•</span>
-              <span>🚀 Problem Solver</span>
-            </motion.div>
-          </motion.div>
-
-          {/* Bio */}
-          <motion.p 
-            className="max-w-3xl mx-auto text-lg sm:text-xl text-slate-600 leading-relaxed"
-            variants={fadeInUp}
-          >
-            {personalInfo.tagline}
-          </motion.p>
-
-          {/* Stats */}
-          <motion.div 
-            className="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-4xl mx-auto pt-8"
-            variants={staggerContainer}
-          >
-            {[
-              { label: 'Experience', value: stats.experience, icon: '💼' },
-              { label: 'Projects', value: stats.projects, icon: '🚀' },
-              { label: 'Publications', value: stats.publications, icon: '📚' },
-              { label: 'CGPA', value: stats.cgpa, icon: '🎓' },
-            ].map((stat, index) => (
+              {/* Availability pill */}
               <motion.div
-                key={stat.label}
-                className="p-6 rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 border-2 border-slate-100 hover:border-blue-200 group cursor-pointer"
-                variants={scaleIn}
-                whileHover={{ scale: 1.05, y: -5 }}
-                whileTap={{ scale: 0.95 }}
+                variants={{ hidden: { opacity: 0, y: 16 }, visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: easeEntrance } } }}
+                className="flex flex-wrap items-center gap-3"
               >
-                <motion.div 
-                  className="text-3xl mb-2"
-                  whileHover={{ scale: 1.2, rotate: index % 2 === 0 ? 10 : -10 }}
-                  transition={{ type: 'spring', stiffness: 300 }}
-                >
-                  {stat.icon}
-                </motion.div>
-                <div className="text-3xl font-bold text-blue-600 mb-1">
-                  {stat.value}
-                </div>
-                <div className="text-sm text-slate-600 font-medium">
-                  {stat.label}
-                </div>
+                <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-ink/10 shadow-sm text-sm font-medium text-ink-body">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-60" />
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500" />
+                  </span>
+                  Available for opportunities
+                </span>
+                <span className="inline-flex items-center gap-1.5 text-sm text-ink-muted">
+                  <MapPin className="w-3.5 h-3.5" /> Remote
+                </span>
               </motion.div>
-            ))}
-          </motion.div>
 
-          {/* CTAs */}
-          <motion.div 
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8"
-            variants={staggerContainer}
-          >
-            <motion.div variants={staggerItem}>
-              <Button
-                size="lg"
-                variant="primary"
-                onClick={() => scrollToSection('projects')}
-                rightIcon={<ExternalLink className="w-5 h-5" />}
+              {/* Name */}
+              <motion.h1
+                variants={{ hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0, transition: { duration: durOut, ease: easeEntrance } } }}
+                className="text-[clamp(2.6rem,6vw,5rem)] font-black leading-[1.02] tracking-tight text-ink"
               >
-                View My Work
-              </Button>
-            </motion.div>
-            <motion.div variants={staggerItem}>
-              <Button
-                size="lg"
-                variant="outline"
-                onClick={() => scrollToSection('contact')}
-                leftIcon={<Mail className="w-5 h-5" />}
-              >
-                Get in Touch
-              </Button>
-            </motion.div>
-            <motion.div variants={staggerItem}>
-              <Button
-                size="lg"
-                variant="ghost"
-                onClick={() => window.open('https://canva.link/xf0iomrlfurnyq4', '_blank')}
-                leftIcon={<Download className="w-5 h-5" />}
-              >
-                Download Resume
-              </Button>
-            </motion.div>
-          </motion.div>
+                {personalInfo.name.split(' ')[0]}{' '}
+                <span className="text-gradient-indigo">{personalInfo.name.split(' ')[1]}</span>
+              </motion.h1>
 
-          {/* Social Links */}
-          <motion.div 
-            className="flex items-center justify-center gap-4 pt-8"
-            variants={staggerContainer}
-          >
-            {[
-              { icon: <Github className="w-6 h-6" />, url: social.github.url, label: 'GitHub' },
-              { icon: <Linkedin className="w-6 h-6" />, url: social.linkedin.url, label: 'LinkedIn' },
-              { 
-                icon: <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-2.365-1.914-5.766-1.649-7.974.632L5.304 8.16l-3.853 4.126c-.184.198-.35.417-.495.652a5.266 5.266 0 0 0-.653 1.379 5.376 5.376 0 0 0-.233 1.64 5.527 5.527 0 0 0 .062 1.062c.058.362.153.72.282 1.068.13.348.296.682.495 1l.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019" /></svg>,
-                url: social.leetcode.url, 
-                label: 'LeetCode' 
-              },
-              { icon: <Mail className="w-6 h-6" />, url: `mailto:${personalInfo.email}`, label: 'Email' },
-            ].map((link, index) => (
-              <motion.a
-                key={link.label}
-                href={link.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 rounded-lg bg-white shadow-md border-2 border-slate-100 hover:border-blue-300 text-slate-700 hover:text-blue-600 transition-colors"
-                aria-label={link.label}
-                variants={scaleIn}
-                whileHover={{ scale: 1.1, rotate: index % 2 === 0 ? 5 : -5 }}
-                whileTap={{ scale: 0.9 }}
+              {/* Role typing */}
+              <motion.div
+                variants={{ hidden: { opacity: 0 }, visible: { opacity: 1, transition: { duration: 0.6, delay: 0.2 } } }}
+                className="text-lg sm:text-2xl text-ink-body min-h-[2rem]"
               >
-                {link.icon}
-              </motion.a>
-            ))}
-          </motion.div>
+                <TypingAnimation roles={personalInfo.roles || ['DevOps Engineer']} />
+              </motion.div>
 
-          {/* Scroll indicator */}
-          <motion.div 
-            className="pt-12"
-            variants={fadeInUp}
-          >
-            <motion.button
-              onClick={() => scrollToSection('about')}
-              className="text-slate-400 hover:text-slate-600 transition-colors"
-              aria-label="Scroll to about section"
-              animate={{ y: [0, 10, 0] }}
-              transition={{ duration: 1.5, repeat: Infinity }}
+              {/* Bio */}
+              <motion.p
+                variants={{ hidden: { opacity: 0, x: -12 }, visible: { opacity: 1, x: 0, transition: { duration: 0.5, ease: easeEntrance } } }}
+                className="text-ink-body text-base leading-relaxed max-w-lg border-l-[3px] border-violet-400 pl-4"
+              >
+                {personalInfo.bio}
+              </motion.p>
+
+              {/* CTAs */}
+              <motion.div
+                variants={{ hidden: { opacity: 0, y: 12 }, visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: easeEntrance } } }}
+                className="flex flex-wrap gap-3 relative z-20 pt-1"
+              >
+                <motion.button
+                  whileHover={{ scale: 1.04, y: -2, boxShadow: '0 16px 32px -12px rgba(88,58,203,0.5)' }}
+                  whileTap={{ scale: 0.97 }}
+                  onClick={() => scrollToSection('projects')}
+                  className="group flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-600 to-violet-500 text-white font-semibold rounded-full shadow-lg shadow-indigo-500/30 cursor-pointer"
+                >
+                  View My Work
+                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                </motion.button>
+                <motion.button
+                  whileHover={{ scale: 1.04, y: -2 }}
+                  whileTap={{ scale: 0.97 }}
+                  onClick={() => scrollToSection('contact')}
+                  className="flex items-center gap-2 px-6 py-3 border-2 border-ink/15 text-ink font-semibold rounded-full hover:border-violet-400 hover:text-violet-600 transition-colors cursor-pointer"
+                >
+                  <Mail className="w-4 h-4" /> Get in Touch
+                </motion.button>
+                <motion.a
+                  href="https://canva.link/363qu7m58fy6eax"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.04, y: -2 }}
+                  whileTap={{ scale: 0.97 }}
+                  className="flex items-center gap-2 px-6 py-3 border border-ink/10 bg-white text-ink-body font-semibold rounded-full hover:text-violet-600 hover:border-violet-300 transition-colors"
+                >
+                  <Download className="w-4 h-4" /> Resume
+                </motion.a>
+              </motion.div>
+
+              {/* Socials */}
+              <motion.div
+                variants={{ hidden: { opacity: 0 }, visible: { opacity: 1, transition: { duration: 0.5 } } }}
+                className="flex items-center gap-3 relative z-20"
+              >
+                {[
+                  { icon: <Github className="w-5 h-5" />, url: social.github.url, label: 'GitHub' },
+                  { icon: <Linkedin className="w-5 h-5" />, url: social.linkedin.url, label: 'LinkedIn' },
+                  {
+                    icon: (
+                      <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" />
+                      </svg>
+                    ),
+                    url: social.leetcode.url,
+                    label: 'Medium',
+                  },
+                  { icon: <Mail className="w-5 h-5" />, url: `mailto:${personalInfo.email}`, label: 'Email' },
+                ].map((link, i) => (
+                  <motion.a
+                    key={link.label}
+                    href={link.url}
+                    target={link.url.startsWith('mailto') ? undefined : '_blank'}
+                    rel="noopener noreferrer"
+                    aria-label={link.label}
+                    initial={{ opacity: 0, y: 12, scale: 0.8 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    transition={{ delay: 0.8 + i * 0.1, type: 'spring', damping: 18, stiffness: 260 }}
+                    whileHover={{ scale: 1.15, y: -4, rotate: 4, borderColor: '#A3A3EA' }}
+                    whileTap={{ scale: 0.92 }}
+                    className="p-2.5 rounded-full bg-white border border-ink/10 text-ink-body hover:text-indigo-600 shadow-sm transition-colors cursor-pointer"
+                  >
+                    {link.icon}
+                  </motion.a>
+                ))}
+              </motion.div>
+            </motion.div>
+
+            {/* ---- Right column: indigo panel + mockup card (design.md §4.1) ---- */}
+            <motion.div
+              style={{ y: panelY }}
+              initial={{ opacity: 0, x: 60, scale: 0.95 }}
+              animate={{ opacity: 1, x: 0, scale: 1 }}
+              transition={{ duration: 0.9, ease: easeEntrance, delay: 0.25 }}
+              className="relative order-1 lg:order-2 flex justify-center lg:justify-end"
             >
-              <svg
-                className="w-6 h-6 mx-auto"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+              {/* Glow behind panel */}
+              <motion.div
+                className="absolute inset-0 -z-10 rounded-[2.5rem] blur-2xl"
+                style={{
+                  background: 'radial-gradient(closest-side, rgba(88,58,203,0.35), transparent 75%)',
+                }}
+                animate={{ opacity: [0.6, 1, 0.6] }}
+                transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
+              />
+
+              {/* Indigo panel */}
+              <motion.div
+                whileHover={{ y: -6 }}
+                transition={{ type: 'spring', stiffness: 260, damping: 20 }}
+                className="relative w-[min(420px,88vw)] aspect-[4/5] rounded-[2.5rem] bg-gradient-to-br from-indigo-600 via-indigo-700 to-violet-600 shadow-2xl shadow-indigo-600/40 p-6 sm:p-8 overflow-hidden"
               >
-                <path d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-              </svg>
-            </motion.button>
-          </motion.div>
+                {/* Panel inner texture */}
+                <div className="absolute inset-0 opacity-20 pointer-events-none"
+                  style={{
+                    backgroundImage: 'radial-gradient(circle at 20% 30%, rgba(255,255,255,0.6) 0%, transparent 40%), linear-gradient(160deg, transparent 60%, rgba(0,0,0,0.25))',
+                  }}
+                />
+                {/* Rotating decorative ring */}
+                <motion.div
+                  className="absolute -right-16 -top-16 w-48 h-48 rounded-full border border-white/15"
+                  animate={{ rotate: 360 }}
+                  transition={{ duration: 32, repeat: Infinity, ease: 'linear' }}
+                />
+                <motion.div
+                  className="absolute -right-8 -top-8 w-32 h-32 rounded-full border border-dashed border-white/20"
+                  animate={{ rotate: -360 }}
+                  transition={{ duration: 24, repeat: Infinity, ease: 'linear' }}
+                />
+
+                {/* Panel header chips */}
+                <div className="relative flex items-center justify-between mb-6">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/15 text-white text-xs font-semibold backdrop-blur-sm">
+                    <Sparkles className="w-3.5 h-3.5" /> DevOps · SRE
+                  </span>
+                  <span className="relative flex h-2.5 w-2.5">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-300 opacity-75" />
+                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-300" />
+                  </span>
+                </div>
+
+                {/* Mockup window card (design.md §5) */}
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.85, y: 24 }}
+                  animate={{ opacity: 1, scale: 1, y: 0 }}
+                  transition={{ delay: 0.7, type: 'spring', damping: 22, stiffness: 240 }}
+                  className="relative bg-white rounded-2xl shadow-xl overflow-hidden"
+                >
+                  {/* Window title bar with traffic dots */}
+                  <div className="flex items-center gap-2 px-4 py-3 bg-cream-light border-b border-ink/10">
+                    <span className="w-3 h-3 rounded-full bg-[#ff5f57]" />
+                    <span className="w-3 h-3 rounded-full bg-[#febc2e]" />
+                    <span className="w-3 h-3 rounded-full bg-[#28c840]" />
+                    <span className="ml-2 text-[11px] text-ink-muted font-mono">ujwal@devops ~ kubectl</span>
+                  </div>
+                  <div className="p-4 sm:p-5 space-y-3 font-mono text-[12px] leading-relaxed">
+                    <div className="flex items-center gap-2">
+                      <span className="text-green-600 font-bold">❯</span>
+                      <span className="text-ink-body">kubectl get deployments</span>
+                    </div>
+                    {['backend-api', 'web-app', 'worker'].map((app, i) => (
+                      <motion.div
+                        key={app}
+                        initial={{ opacity: 0, x: -8 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ delay: 1 + i * 0.15 }}
+                        className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-cream"
+                      >
+                        <span className="text-indigo-600 font-semibold">{app}</span>
+                        <span className="text-ink-muted flex-1 text-right">3/3</span>
+                        <span className="px-1.5 py-0.5 rounded-full bg-green-100 text-green-700 text-[10px] font-bold">READY</span>
+                      </motion.div>
+                    ))}
+                    <div className="flex items-center gap-2 pt-1">
+                      <span className="text-green-600 font-bold">❯</span>
+                      <span className="inline-block w-1.5 h-3.5 bg-indigo-600 align-middle animate-pulse" />
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* Bottom stat row */}
+                <motion.div
+                  initial={{ opacity: 0, y: 16 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 1.4, duration: 0.5 }}
+                  className="relative mt-6 grid grid-cols-3 gap-3"
+                >
+                  {[
+                    { v: '2+', l: 'Years' },
+                    { v: '15+', l: 'Projects' },
+                    { v: '$6k', l: 'Saved /yr' },
+                  ].map((s) => (
+                    <motion.div
+                      key={s.l}
+                      whileHover={{ scale: 1.06 }}
+                      className="bg-white/10 border border-white/15 rounded-xl px-3 py-3 text-center backdrop-blur-sm"
+                    >
+                      <div className="text-xl font-black text-white">{s.v}</div>
+                      <div className="text-[10px] text-white/70 font-medium uppercase tracking-wider">{s.l}</div>
+                    </motion.div>
+                  ))}
+                </motion.div>
+              </motion.div>
+
+              {/* Floating tech tags */}
+              {[
+                { label: 'Kubernetes', x: '-6%', y: '18%', delay: 1.6 },
+                { label: 'AWS', x: '88%', y: '46%', delay: 1.8 },
+                { label: 'ArgoCD', x: '-8%', y: '72%', delay: 2.0 },
+                { label: 'Terraform', x: '86%', y: '86%', delay: 2.2 },
+              ].map((tag) => (
+                <motion.span
+                  key={tag.label}
+                  className="absolute hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-ink/10 text-xs font-bold text-indigo-700 shadow-lg shadow-indigo-500/10"
+                  style={{ left: tag.x, top: tag.y }}
+                  initial={{ opacity: 0, scale: 0.5 }}
+                  animate={{
+                    opacity: [0, 1, 1, 0.9, 1],
+                    y: [0, -10, 0, -6, 0],
+                    scale: 1,
+                  }}
+                  transition={{
+                    opacity: { delay: tag.delay, duration: 0.6 },
+                    y: { delay: tag.delay + 0.4, duration: 3.5, repeat: Infinity, ease: 'easeInOut' },
+                    scale: { delay: tag.delay, duration: 0.5 },
+                  }}
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-violet-500" />
+                  {tag.label}
+                </motion.span>
+              ))}
+            </motion.div>
+          </div>
         </div>
       </motion.div>
+
+      {/* Scrolling ticker (design.md — marquee) */}
+      <div className="relative z-10 border-t border-ink/10 bg-white/60 backdrop-blur-sm py-4 overflow-hidden marquee-mask">
+        <div className="animate-marquee flex whitespace-nowrap">
+          {doubled.map((item, i) => (
+            <div key={i} className="flex items-center gap-6 px-6 flex-shrink-0">
+              <span className="text-sm font-semibold text-ink-body uppercase tracking-widest">
+                {item}
+              </span>
+              <span className="text-indigo-300 text-base">◆</span>
+            </div>
+          ))}
+        </div>
+      </div>
     </section>
   );
 }

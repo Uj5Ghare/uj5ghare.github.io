@@ -8,13 +8,13 @@ const Card = React.forwardRef<
 >(({ className, hoverGlow = true, ...props }, ref) => (
   <motion.div
     ref={ref}
-    whileHover={hoverGlow ? { y: -4, scale: 1.01 } : undefined}
-    transition={{ duration: 0.2, ease: 'easeOut' }}
+    whileHover={hoverGlow ? { y: -5, scale: 1.01 } : undefined}
+    transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
     className={cn(
-      'rounded-xl border bg-white shadow-sm transition-all duration-300',
-      hoverGlow 
-        ? 'border-slate-200 hover:border-blue-200 hover:shadow-xl hover:shadow-blue-100/50' 
-        : 'border-slate-200 hover:shadow-md',
+      'rounded-2xl border bg-white shadow-sm transition-all duration-300',
+      hoverGlow
+        ? 'border-ink/10 hover:border-indigo-200 hover:shadow-xl hover:shadow-indigo-500/10'
+        : 'border-ink/10 hover:shadow-md',
       'group relative overflow-hidden',
       className
     )}
@@ -41,7 +41,7 @@ const CardTitle = React.forwardRef<
 >(({ className, children, ...props }, ref) => (
   <h3
     ref={ref}
-    className={cn('text-2xl font-bold leading-none tracking-tight', className)}
+    className={cn('text-2xl font-black leading-none tracking-tight text-ink', className)}
     {...props}
   >
     {children}
@@ -55,7 +55,7 @@ const CardDescription = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <p
     ref={ref}
-    className={cn('text-sm text-slate-600', className)}
+    className={cn('text-sm text-ink-body', className)}
     {...props}
   />
 ));

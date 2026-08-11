@@ -4,68 +4,120 @@
 
 @layer base {
   * {
-    @apply border-[#2a2a2a];
+    @apply border-ink/10;
+  }
+  html {
+    scroll-behavior: smooth;
   }
   body {
-    @apply bg-[#0a0a0a] text-white;
+    @apply bg-cream text-ink;
     font-feature-settings: "rlig" 1, "calt" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection {
+    background-color: rgba(115, 99, 249, 0.25);
+    color: #242D51;
   }
 }
 
 @layer utilities {
-  .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400;
+  .text-gradient-indigo {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-violet-500;
   }
 
-  .glass-effect {
-    @apply bg-white/5 backdrop-blur-lg border border-white/10;
+  .text-gradient-warm {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-gold to-peach-deep;
   }
 
-  .card-hover {
-    @apply transition-all duration-300 hover:scale-105 hover:shadow-2xl;
+  .glass-light {
+    @apply bg-white/70 backdrop-blur-xl border border-white/60;
   }
 
-  .dark-card {
-    @apply bg-[#111111] border border-[#2a2a2a] rounded-2xl;
+  .card-surface {
+    @apply bg-white border border-ink/10 rounded-2xl shadow-sm;
+  }
+
+  .blob {
+    @apply absolute rounded-full pointer-events-none;
+    filter: blur(2px);
   }
 }
 
-@keyframes ticker {
+/* ---------- Keyframes (design.md §6) ---------- */
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px); }
+  50%      { transform: translateY(-18px); }
+}
+
+@keyframes blob-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50%      { transform: scale(1.12); opacity: 1; }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes marquee {
   0%   { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
 
-.ticker-track {
-  display: flex;
-  width: max-content;
-  animation: ticker 30s linear infinite;
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
 }
 
-.ticker-track:hover {
-  animation-play-state: paused;
+@keyframes gradient-pan {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
+
+.animate-float-slow { animation: float-slow 6s ease-in-out infinite; }
+.animate-blob-pulse { animation: blob-pulse 9s ease-in-out infinite; }
+.animate-spin-slow  { animation: spin-slow 30s linear infinite; }
+.animate-marquee   { animation: marquee 32s linear infinite; }
+
+.marquee-mask {
+  mask-image: linear-gradient(90deg, transparent, black 12%, black 88%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, black 12%, black 88%, transparent);
+}
+
+.gradient-pan {
+  background-size: 200% 200%;
+  animation: gradient-pan 8s ease infinite;
+}
+
+.shimmer-text {
+  background-size: 200% 100%;
+  animation: shimmer 3s linear infinite;
+}
+
+/* ---------- Scrollbar ---------- */
 
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 8px;
 }
-
 ::-webkit-scrollbar-track {
-  background: #111;
+  background: #F3EDE8;
 }
-
 ::-webkit-scrollbar-thumb {
-  background: #333;
-  border-radius: 3px;
+  background: #D8CCF0;
+  border-radius: 4px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #A3A3EA;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-::selection {
-  background-color: rgba(59, 130, 246, 0.3);
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

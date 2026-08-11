@@ -3,17 +3,17 @@ import { cva, type VariantProps } from 'class-variance-authority';
 import { cn } from '@/lib/utils';
 
 const badgeVariants = cva(
-  'inline-flex items-center rounded-full font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2',
+  'inline-flex items-center rounded-full font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2',
   {
     variants: {
       variant: {
-        default: 'bg-blue-100 text-blue-800 hover:bg-blue-200',
-        secondary: 'bg-orange-100 text-orange-800 hover:bg-orange-200',
-        success: 'bg-green-100 text-green-800 hover:bg-green-200',
-        warning: 'bg-yellow-100 text-yellow-800 hover:bg-yellow-200',
-        danger: 'bg-red-100 text-red-800 hover:bg-red-200',
-        outline: 'border border-slate-300 text-slate-700 hover:bg-slate-50',
-        cyan: 'bg-cyan-100 text-cyan-800 hover:bg-cyan-200',
+        default: 'bg-indigo-50 text-indigo-700 hover:bg-indigo-100',
+        secondary: 'bg-peach text-ink hover:bg-peach-deep',
+        success: 'bg-emerald-50 text-emerald-700 hover:bg-emerald-100',
+        warning: 'bg-amber-50 text-amber-700 hover:bg-amber-100',
+        danger: 'bg-red-50 text-red-700 hover:bg-red-100',
+        outline: 'border border-ink/15 text-ink-body hover:bg-cream-light',
+        violet: 'bg-violet-50 text-violet-700 hover:bg-violet-100',
       },
       size: {
         sm: 'px-2 py-0.5 text-xs',
