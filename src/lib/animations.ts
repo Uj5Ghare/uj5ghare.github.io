@@ -246,6 +246,12 @@ export const getMotionProps = () => {
 // Entrance ease: easeOutQuint — fast start, soft settle
 export const easeEntrance = [0.22, 1, 0.36, 1];
 
+// ============================================================
+// leoparpeix.com signature ease — cubic-bezier(.16,1,.1,1)
+// Fast release, ultra-soft landing. Used for every reveal/hover.
+// ============================================================
+export const easeElegant = [0.16, 1, 0.1, 1] as [number, number, number, number];
+
 export const durIn = 0.4;
 export const durOut = 0.6;
 
@@ -287,5 +293,87 @@ export const panelSpring = {
     scale: 1,
     y: 0,
     transition: { type: 'spring', damping: 25, stiffness: 300 } as never,
+  },
+};
+
+// ============================================================
+// leoparpeix.com — masked line reveal system
+// Every text line sits inside an overflow:hidden mask and
+// slides up from translateY(100%), often with a tiny ±X drift
+// so lines land with a staggered, hand-set feel.
+// Wrap each line in <span className="line-mask"> and give the
+// inner element these variants.
+// ============================================================
+
+// A single masked line: rises from below the mask, with drift
+export const lineReveal = (offset: number = 0): Variants => ({
+  hidden: { y: '100%', x: `${offset}%` },
+  visible: {
+    y: '0%',
+    x: '0%',
+    transition: { duration: 0.9, ease: easeElegant },
+  },
+});
+
+// Container that staggers its masked lines
+export const linesStagger: Variants = {
+  hidden: {},
+  visible: {
+    transition: { staggerChildren: 0.08, delayChildren: 0.1 },
+  },
+};
+
+// Fade/slide for lines without a mask (small labels, meta)
+export const labelRise: Variants = {
+  hidden: { opacity: 0, y: 14 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.7, ease: easeElegant },
+  },
+};
+
+// Underline wipe (origin flips on hover, like leoparpeix links)
+export const underlineWipe = {
+  rest: {
+    scaleX: 0,
+    transformOrigin: 'right center',
+    transition: { duration: 0.4, ease: easeElegant },
+  },
+  hover: {
+    scaleX: 1,
+    transformOrigin: 'left center',
+    transition: { duration: 0.45, ease: easeElegant },
+  },
+};
+
+// Sliding arrow: default slides out top-left, hover arrow slides in
+export const arrowSwap = {
+  rest: {
+    x: 0,
+    y: 0,
+    opacity: 1,
+    transition: { duration: 0.35, ease: easeElegant },
+  },
+  hover: {
+    x: '140%',
+    y: '-140%',
+    opacity: 0,
+    transition: { duration: 0.35, ease: easeElegant },
+  },
+};
+
+export const arrowSwapHover = {
+  rest: {
+    x: '-140%',
+    y: '140%',
+    opacity: 0,
+    transition: { duration: 0.35, ease: easeElegant },
+  },
+  hover: {
+    x: 0,
+    y: 0,
+    opacity: 1,
+    transition: { duration: 0.35, ease: easeElegant },
   },
 };

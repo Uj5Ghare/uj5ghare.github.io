@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { experiences } from '@/data';
 import { Download, ChevronDown, Briefcase } from 'lucide-react';
-import { easeEntrance, durIn } from '@/lib/animations';
+import { easeEntrance, durIn, linesStagger, lineReveal } from '@/lib/animations';
 
 export function Experience() {
   const [expanded, setExpanded] = useState<string | null>(experiences[0]?.id ?? null);
@@ -45,13 +45,20 @@ export function Experience() {
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-14">
           <motion.h2
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial="hidden"
+            whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.6, duration: 0.6, ease: easeEntrance }}
-            className="text-4xl sm:text-5xl lg:text-6xl font-black text-ink leading-tight"
+            variants={linesStagger}
+            className="display-lg font-black text-ink leading-none select-none"
           >
-            Work <span className="text-gradient-indigo">Experience</span>
+            <span className="line-mask">
+              <motion.span variants={lineReveal(-3)}>Work</motion.span>
+            </span>
+            <span className="line-mask">
+              <motion.span variants={lineReveal(3)}>
+                <span className="text-gradient-indigo">Experience</span>
+              </motion.span>
+            </span>
           </motion.h2>
           <motion.a
             href="https://canva.link/363qu7m58fy6eax"

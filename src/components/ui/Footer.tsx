@@ -4,6 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { personalInfo, social } from '@/data';
 import { Github, Linkedin, Mail, ArrowUp, Heart } from 'lucide-react';
+import { underlineWipe } from '@/lib/animations';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -77,15 +78,29 @@ export function Footer() {
               Quick Links
             </h3>
             <ul className="space-y-3 text-sm">
-              {links.map((link) => (
+              {links.map((link, i) => (
                 <li key={link.label}>
-                  <a
+                  <motion.a
                     href={link.href}
-                    className="text-ink-body hover:text-indigo-600 transition-colors inline-flex items-center gap-2 group"
+                    initial={{ opacity: 0, x: -12 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.06, duration: 0.5, ease: [0.16, 1, 0.1, 1] }}
+                    className="group inline-flex items-baseline gap-3 text-ink-body hover:text-indigo-600 transition-colors relative"
                   >
-                    <span className="w-0 group-hover:w-3 transition-all h-px bg-indigo-400" />
-                    {link.label}
-                  </a>
+                    <span className="text-[10px] text-ink-muted/60 font-mono">
+                      {String(i + 1).padStart(2, '0')}
+                    </span>
+                    <span className="relative">
+                      {link.label}
+                      <motion.span
+                        className="absolute left-0 -bottom-0.5 h-[2px] bg-indigo-500 w-full"
+                        variants={underlineWipe}
+                        initial="rest"
+                        whileHover="hover"
+                      />
+                    </span>
+                  </motion.a>
                 </li>
               ))}
             </ul>

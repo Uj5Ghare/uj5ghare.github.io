@@ -8,6 +8,8 @@
   }
   html {
     scroll-behavior: smooth;
+    /* leoparpeix.com signature: fluid root so rem scales with viewport */
+    font-size: clamp(14px, 0.9722vw, 22px);
   }
   body {
     @apply bg-cream text-ink;
@@ -40,6 +42,44 @@
   .blob {
     @apply absolute rounded-full pointer-events-none;
     filter: blur(2px);
+  }
+
+  /* ---------- leoparpeix.com display type ---------- */
+  /* Oversized, viewport-scaled, uppercase, tight line-height */
+  .display-xl {
+    font-size: clamp(3rem, 9.5vw, 9rem);
+    line-height: 0.9;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+  }
+  .display-lg {
+    font-size: clamp(2.5rem, 6.5vw, 6.5rem);
+    line-height: 0.92;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+  }
+  .display-md {
+    font-size: clamp(1.9rem, 4.2vw, 4rem);
+    line-height: 0.95;
+    text-transform: uppercase;
+    letter-spacing: -0.015em;
+  }
+  .display-sm {
+    font-size: clamp(1.3rem, 2.4vw, 2.2rem);
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  /* Masked line: wrap a text line, inner element animates y:100% -> 0 */
+  .line-mask {
+    display: block;
+    overflow: hidden;
+    contain: paint;
+  }
+  .line-mask > * {
+    display: block;
+    backface-visibility: hidden;
   }
 }
 

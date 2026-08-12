@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { personalInfo, stats } from '@/data';
 import { Download, Mail, ArrowRight, Cloud, Activity, Zap, PiggyBank } from 'lucide-react';
-import { fadeInUp, staggerContainer, easeEntrance } from '@/lib/animations';
+import { fadeInUp, staggerContainer, easeEntrance, linesStagger, lineReveal } from '@/lib/animations';
 
 function useCountUp(end: number, duration = 1800) {
   const ref = useRef<HTMLDivElement>(null);
@@ -74,22 +74,20 @@ export function About() {
           <span className="w-8 h-px bg-indigo-400" /> / About Me
         </motion.p>
 
-        {/* Headline */}
+        {/* Headline — masked line reveal */}
         <motion.h2
-          variants={fadeInUp}
-          className="text-4xl sm:text-5xl lg:text-6xl font-black text-ink leading-[1.05] mb-16 max-w-4xl"
+          variants={linesStagger}
+          className="display-lg font-black text-ink select-none mb-14"
         >
-          DevOps Engineer.{' '}
-          <span className="text-gradient-indigo">Cloud Builder.</span> Infrastructure{' '}
-          <span className="relative inline-block">
-            <span className="text-gradient-warm">Automator.</span>
-            <motion.span
-              className="absolute left-0 -bottom-1 w-full h-2 rounded-full bg-gradient-to-r from-gold/40 to-peach-deep/40 -z-10"
-              initial={{ scaleX: 0 }}
-              whileInView={{ scaleX: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.6, duration: 0.7, ease: easeEntrance }}
-            />
+          <span className="line-mask">
+            <motion.span variants={lineReveal(-3)}>
+              DevOps Engineer. <span className="text-gradient-indigo">Cloud Builder.</span>
+            </motion.span>
+          </span>
+          <span className="line-mask">
+            <motion.span variants={lineReveal(3)}>
+              Infrastructure <span className="text-gradient-warm">Automator.</span>
+            </motion.span>
           </span>
         </motion.h2>
 

@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { skillCategories } from '@/data';
-import { fadeInUp, staggerContainer, easeEntrance, durIn } from '@/lib/animations';
+import { fadeInUp, staggerContainer, easeEntrance, durIn, linesStagger, lineReveal } from '@/lib/animations';
 import {
   Workflow, Boxes, Cloud, Code2, LineChart, ShieldCheck,
 } from 'lucide-react';
@@ -80,10 +80,17 @@ export function Skills() {
         </motion.p>
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-14">
           <motion.h2
-            variants={fadeInUp}
-            className="text-4xl sm:text-5xl lg:text-6xl font-black text-ink leading-tight"
+            variants={linesStagger}
+            className="display-lg font-black text-ink leading-none select-none"
           >
-            What I do <span className="text-gradient-indigo">best?</span>
+            <span className="line-mask">
+              <motion.span variants={lineReveal(-3)}>What I do</motion.span>
+            </span>
+            <span className="line-mask">
+              <motion.span variants={lineReveal(3)}>
+                <span className="text-gradient-indigo">best?</span>
+              </motion.span>
+            </span>
           </motion.h2>
 
           {/* Toggle pill */}

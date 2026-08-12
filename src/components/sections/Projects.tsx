@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { projects, projectCategories } from '@/data';
 import { Github, ExternalLink, TrendingUp, FolderGit2 } from 'lucide-react';
-import { fadeInUp, staggerContainer, easeEntrance, durIn } from '@/lib/animations';
+import { fadeInUp, staggerContainer, easeEntrance, durIn, linesStagger, lineReveal } from '@/lib/animations';
 
 export function Projects() {
   const [filter, setFilter] = useState('all');
@@ -31,10 +31,17 @@ export function Projects() {
         </motion.p>
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-6">
           <motion.h2
-            variants={fadeInUp}
-            className="text-4xl sm:text-5xl lg:text-6xl font-black text-ink leading-tight"
+            variants={linesStagger}
+            className="display-lg font-black text-ink leading-none select-none"
           >
-            Selected <span className="text-gradient-indigo">Work</span>
+            <span className="line-mask">
+              <motion.span variants={lineReveal(-3)}>Selected</motion.span>
+            </span>
+            <span className="line-mask">
+              <motion.span variants={lineReveal(3)}>
+                <span className="text-gradient-indigo">Work</span>
+              </motion.span>
+            </span>
           </motion.h2>
           <motion.a
             variants={fadeInUp}

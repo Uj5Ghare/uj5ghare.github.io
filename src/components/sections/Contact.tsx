@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { personalInfo, social, contact } from '@/data';
 import { Mail, MapPin, Github, Linkedin, Download, Send, CheckCircle2, ArrowUpRight, MessageCircle } from 'lucide-react';
-import { fadeInUp, staggerContainer, easeEntrance } from '@/lib/animations';
+import { fadeInUp, staggerContainer, easeEntrance, linesStagger, lineReveal } from '@/lib/animations';
 import { useScrollAnimation } from '@/lib/hooks';
 
 export function Contact() {
@@ -71,12 +71,19 @@ export function Contact() {
           <span className="w-8 h-px bg-indigo-400" /> / Contact
         </motion.p>
         <motion.h2
-          variants={fadeInUp}
-          className="text-4xl sm:text-5xl lg:text-6xl font-black text-ink leading-tight mb-6"
+          variants={linesStagger}
+          className="display-lg font-black text-ink leading-none select-none"
         >
-          Let&apos;s <span className="text-gradient-indigo">Connect</span>
+          <span className="line-mask">
+            <motion.span variants={lineReveal(-3)}>Let&apos;s</motion.span>
+          </span>
+          <span className="line-mask">
+            <motion.span variants={lineReveal(3)}>
+              <span className="text-gradient-indigo">Connect</span>
+            </motion.span>
+          </span>
         </motion.h2>
-        <motion.p variants={fadeInUp} className="text-ink-body text-base mb-16 max-w-xl">
+        <motion.p variants={fadeInUp} className="text-ink-body text-base mb-16 mt-6 max-w-xl">
           Open to opportunities, collaborations, and interesting conversations.
         </motion.p>
 

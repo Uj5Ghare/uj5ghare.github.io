@@ -8,7 +8,7 @@ import {
   Github, Linkedin, Mail, Download, ExternalLink, MapPin,
   ArrowRight, Sparkles,
 } from 'lucide-react';
-import { easeEntrance, durOut } from '@/lib/animations';
+import { easeEntrance, linesStagger, lineReveal, arrowSwap, arrowSwapHover } from '@/lib/animations';
 
 const tickerItems = [
   '2+ Years Experience', '15+ Projects Shipped', '4+ Client Projects',
@@ -136,13 +136,21 @@ export function Hero() {
                 </span>
               </motion.div>
 
-              {/* Name */}
+              {/* Name — leoparpeix style: split lines rise from masked overflow */}
               <motion.h1
-                variants={{ hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0, transition: { duration: durOut, ease: easeEntrance } } }}
-                className="text-[clamp(2.6rem,6vw,5rem)] font-black leading-[1.02] tracking-tight text-ink"
+                variants={linesStagger}
+                className="display-xl font-black text-ink select-none"
               >
-                {personalInfo.name.split(' ')[0]}{' '}
-                <span className="text-gradient-indigo">{personalInfo.name.split(' ')[1]}</span>
+                <span className="line-mask">
+                  <motion.span variants={lineReveal(-4)}>
+                    {personalInfo.name.split(' ')[0]}
+                  </motion.span>
+                </span>
+                <span className="line-mask">
+                  <motion.span variants={lineReveal(4)}>
+                    <span className="text-gradient-indigo">{personalInfo.name.split(' ')[1]}</span>
+                  </motion.span>
+                </span>
               </motion.h1>
 
               {/* Role typing */}
@@ -170,10 +178,17 @@ export function Hero() {
                   whileHover={{ scale: 1.04, y: -2, boxShadow: '0 16px 32px -12px rgba(88,58,203,0.5)' }}
                   whileTap={{ scale: 0.97 }}
                   onClick={() => scrollToSection('projects')}
-                  className="group flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-600 to-violet-500 text-white font-semibold rounded-full shadow-lg shadow-indigo-500/30 cursor-pointer"
+                  className="group flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-600 to-violet-500 text-white font-semibold rounded-full shadow-lg shadow-indigo-500/30 cursor-pointer overflow-hidden"
                 >
                   View My Work
-                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                  <span className="relative w-4 h-4 flex-shrink-0">
+                    <motion.span variants={arrowSwap} initial="rest" whileHover="hover" className="absolute inset-0 flex items-center justify-center">
+                      <ArrowRight className="w-4 h-4" />
+                    </motion.span>
+                    <motion.span variants={arrowSwapHover} initial="rest" whileHover="hover" className="absolute inset-0 flex items-center justify-center">
+                      <ArrowRight className="w-4 h-4" />
+                    </motion.span>
+                  </span>
                 </motion.button>
                 <motion.button
                   whileHover={{ scale: 1.04, y: -2 }}
