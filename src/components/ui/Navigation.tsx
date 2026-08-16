@@ -118,16 +118,14 @@ export function Navigation() {
 
           {/* CTA */}
           <div className="hidden md:flex items-center gap-3">
-            <motion.a
-              href="https://github.com/Uj5Ghare"
-              target="_blank"
-              rel="noopener noreferrer"
+            <motion.button
+              onClick={() => scrollToSection('#contact')}
               whileHover={{ scale: 1.05, y: -1 }}
               whileTap={{ scale: 0.95 }}
-              className="px-5 py-2 rounded-full bg-ink text-white text-sm font-semibold shadow-md shadow-ink/20 hover:shadow-lg hover:shadow-indigo-500/30 transition-all"
+              className="px-5 py-2 rounded-full bg-ink text-white text-sm font-semibold shadow-md shadow-ink/20 hover:shadow-lg hover:shadow-indigo-500/30 transition-all cursor-pointer"
             >
               Get in Touch
-            </motion.a>
+            </motion.button>
           </div>
 
           {/* Mobile toggle */}

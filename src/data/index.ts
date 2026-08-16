@@ -1,20 +1,17 @@
 // Central export point for all data
 
 export { personalInfo } from './personal';
-export { experiences, education, highSchool } from './experience';
+export { experiences } from './experience';
 export type { Experience } from './experience';
-export { skillCategories, topSkills } from './skills';
+export { skillCategories } from './skills';
 export type { SkillCategory, Skill } from './skills';
-export { projects, featuredProjects, projectCategories } from './projects';
+export { projects, projectCategories } from './projects';
 export type { Project } from './projects';
 export {
   achievements,
-  achievementsByCategory,
-  highlightedAchievements
+  achievementsByCategory
 } from './achievements';
 export type { Achievement } from './achievements';
-export { testimonials, quotes, milestones } from './testimonials';
-export type { Testimonial } from './testimonials';
 
 // Statistics for hero/about section
 export const stats = {
@@ -60,33 +57,5 @@ export const social = {
   email: {
     url: 'mailto:ujwal5ghare@gmail.com',
     display: 'ujwal5ghare@gmail.com',
-  },
-};
-
-// SEO metadata
-export const seo = {
-  title: 'Ujwal Pachghare | DevOps & Cloud Engineer',
-  description: 'DevOps & Cloud Engineer with 2+ years of experience in AWS, Kubernetes, CI/CD automation, and SRE. Building reliable, scalable, and cost-efficient infrastructure.',
-  keywords: [
-    'Ujwal Pachghare',
-    'DevOps Engineer',
-    'Cloud Engineer',
-    'AWS',
-    'Kubernetes',
-    'SRE',
-    'Site Reliability Engineer',
-    'Terraform',
-    'Ansible',
-    'ArgoCD',
-    'Helm',
-    'GitOps',
-    'CI/CD',
-    'Infrastructure',
-    'Digiflux Technologies',
-  ],
-  og: {
-    type: 'website',
-    locale: 'en_US',
-    siteName: 'Ujwal Pachghare Portfolio',
   },
 };
