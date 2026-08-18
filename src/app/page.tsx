@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Navigation />
-      <main className="min-h-screen">
+      <main className="min-h-screen overflow-x-hidden">
         <Hero />
         <About />
         <Experience />

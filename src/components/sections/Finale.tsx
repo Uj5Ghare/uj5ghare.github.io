@@ -74,7 +74,7 @@ function TypingLine({ text }: { text: string }) {
   }, [inView, text]);
 
   return (
-    <div ref={ref} className="inline-flex items-center gap-2 font-mono text-xs sm:text-sm text-ink-body">
+    <div ref={ref} className="inline-flex items-center gap-2 font-mono text-xs sm:text-sm text-ink-body overflow-hidden">
       <TerminalSquare className="w-3.5 h-3.5 text-indigo-500" />
       <span className="text-indigo-600">$</span> {shown}
       <span className="inline-block w-2 h-4 bg-indigo-600 animate-pulse" />
@@ -174,7 +174,7 @@ export function Finale() {
           <div className="flex justify-center sm:justify-end">
             <TypingLine text="ujwal@devops:~$ waiting_for_your_message --status=open" />
           </div>
-          <p className="text-xs text-white/40 whitespace-nowrap text-center sm:text-right">
+          <p className="text-xs text-white/40 text-center sm:text-right">
             © 2026 Ujwal Pachghare. All rights reserved.
           </p>
         </motion.div>

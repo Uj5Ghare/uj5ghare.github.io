@@ -131,7 +131,7 @@ export function Skills() {
                   viewport={{ once: true, margin: '-40px' }}
                   transition={{ delay: i * 0.08, duration: durIn, ease: easeEntrance }}
                   whileHover={{ y: -6, boxShadow: '0 24px 48px -20px rgba(88,58,203,0.35)' }}
-                  className="group bg-cream-light border border-ink/10 rounded-2xl p-8 shadow-sm hover:border-indigo-200 transition-all duration-300 relative overflow-hidden"
+                  className="group bg-cream-light border border-ink/10 rounded-2xl p-5 sm:p-8 shadow-sm hover:border-indigo-200 transition-all duration-300 relative overflow-hidden"
                 >
                   {/* hover gradient wash */}
                   <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/0 to-violet-50/0 group-hover:from-indigo-50 group-hover:to-violet-50/70 transition-all duration-500 pointer-events-none" />

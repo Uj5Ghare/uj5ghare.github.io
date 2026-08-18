@@ -133,12 +133,12 @@ export function Achievements() {
         </div>
 
         {/* Summary Stats */}
-        <div className="mt-16 grid grid-cols-2 sm:grid-cols-5 gap-4 max-w-5xl mx-auto">
+        <div className="mt-16 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 max-w-5xl mx-auto">
           {Object.entries(achievementsByCategory).map(([key, items]) => {
             const config = categoryConfig[key as keyof typeof categoryConfig];
             return (
               <Card key={key} className="text-center hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
+                <CardContent className="p-4 sm:p-6">
                   <div className="text-3xl font-bold text-blue-600 mb-2">
                     {items.length}
                   </div>
@@ -154,7 +154,7 @@ export function Achievements() {
         {/* Highlight Card */}
         <div className="mt-16">
           <Card className="max-w-4xl mx-auto bg-gradient-to-br from-orange-50 to-blue-50 border-2 border-orange-100">
-            <CardContent className="p-8 text-center">
+            <CardContent className="p-5 sm:p-8 text-center">
               <Trophy className="w-12 h-12 text-orange-600 mx-auto mb-4" />
               <h3 className="text-2xl font-bold text-slate-900 mb-3">
                 Most Recent Achievement

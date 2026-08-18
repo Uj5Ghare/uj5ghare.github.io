@@ -100,38 +100,38 @@ export function Hero() {
       />
 
       {/* Blobs — design.md §4.1 */}
-      <Blob className="top-24 left-[8%] w-40 h-40 opacity-50" color="#FCE3D5" delay={0.2} />
-      <Blob className="bottom-32 left-[30%] w-28 h-28 opacity-40" color="#A3A3EA" delay={0.7} />
-      <Blob className="top-[22%] right-[36%] w-24 h-24 opacity-40" color="#EFEDFB" delay={1.1} />
+      <Blob className="top-24 left-[8%] w-24 h-24 sm:w-40 sm:h-40 opacity-50" color="#FCE3D5" delay={0.2} />
+      <Blob className="bottom-32 left-[30%] w-20 h-20 sm:w-28 sm:h-28 opacity-40" color="#A3A3EA" delay={0.7} />
+      <Blob className="top-[22%] right-[36%] w-16 h-16 sm:w-24 sm:h-24 opacity-40" color="#EFEDFB" delay={1.1} />
 
       {/* Content */}
       <motion.div
         style={{ y: contentY, opacity }}
         className="flex-1 flex items-center relative z-10"
       >
-        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 py-28 w-full">
-          <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-12 lg:gap-20 items-center">
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 py-20 sm:py-28 w-full">
+          <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 lg:gap-16 items-center">
 
             {/* ---- Left column ---- */}
             <motion.div
               initial="hidden"
               animate="visible"
               variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.12, delayChildren: 0.15 } } }}
-              className="space-y-7 order-2 lg:order-1"
+              className="space-y-5 sm:space-y-7 order-2 lg:order-1"
             >
               {/* Availability pill */}
               <motion.div
                 variants={{ hidden: { opacity: 0, y: 16 }, visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: easeEntrance } } }}
                 className="flex flex-wrap items-center gap-3"
               >
-                <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-ink/10 shadow-sm text-sm font-medium text-ink-body">
+                <span className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1 sm:py-1.5 rounded-full bg-white border border-ink/10 shadow-sm text-xs sm:text-sm font-medium text-ink-body">
                   <span className="relative flex h-2 w-2">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-60" />
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500" />
                   </span>
                   Available for opportunities
                 </span>
-                <span className="inline-flex items-center gap-1.5 text-sm text-ink-muted">
+                <span className="inline-flex items-center gap-1.5 text-xs sm:text-sm text-ink-muted">
                   <MapPin className="w-3.5 h-3.5" /> Remote
                 </span>
               </motion.div>
@@ -139,7 +139,7 @@ export function Hero() {
               {/* Name */}
               <motion.h1
                 variants={{ hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0, transition: { duration: durOut, ease: easeEntrance } } }}
-                className="text-[clamp(2.6rem,6vw,5rem)] font-black leading-[1.02] tracking-tight text-ink"
+                className="text-[clamp(2rem,6vw,5rem)] font-black leading-[1.02] tracking-tight text-ink"
               >
                 {personalInfo.name.split(' ')[0]}{' '}
                 <span className="text-gradient-indigo">{personalInfo.name.split(' ')[1]}</span>
@@ -148,7 +148,7 @@ export function Hero() {
               {/* Role typing */}
               <motion.div
                 variants={{ hidden: { opacity: 0 }, visible: { opacity: 1, transition: { duration: 0.6, delay: 0.2 } } }}
-                className="text-lg sm:text-2xl text-ink-body min-h-[2rem]"
+                className="text-base sm:text-lg sm:text-2xl text-ink-body min-h-[1.5rem] sm:min-h-[2rem]"
               >
                 <TypingAnimation roles={personalInfo.roles || ['DevOps Engineer']} />
               </motion.div>
@@ -156,7 +156,7 @@ export function Hero() {
               {/* Bio */}
               <motion.p
                 variants={{ hidden: { opacity: 0, x: -12 }, visible: { opacity: 1, x: 0, transition: { duration: 0.5, ease: easeEntrance } } }}
-                className="text-ink-body text-base leading-relaxed max-w-lg border-l-[3px] border-violet-400 pl-4"
+                className="text-ink-body text-sm sm:text-base leading-relaxed max-w-lg border-l-[3px] border-violet-400 pl-4"
               >
                 {personalInfo.bio}
               </motion.p>
@@ -164,13 +164,13 @@ export function Hero() {
               {/* CTAs */}
               <motion.div
                 variants={{ hidden: { opacity: 0, y: 12 }, visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: easeEntrance } } }}
-                className="flex flex-wrap gap-3 relative z-20 pt-1"
+                className="flex flex-wrap gap-2 sm:gap-3 relative z-20 pt-1"
               >
                 <motion.button
                   whileHover={{ scale: 1.04, y: -2, boxShadow: '0 16px 32px -12px rgba(88,58,203,0.5)' }}
                   whileTap={{ scale: 0.97 }}
                   onClick={() => scrollToSection('projects')}
-                  className="group flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-600 to-violet-500 text-white font-semibold rounded-full shadow-lg shadow-indigo-500/30 cursor-pointer"
+                  className="group flex items-center gap-2 px-4 py-2.5 sm:px-6 sm:py-3 bg-gradient-to-r from-indigo-600 to-violet-500 text-white font-semibold rounded-full shadow-lg shadow-indigo-500/30 cursor-pointer text-sm sm:text-base"
                 >
                   View My Work
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -179,7 +179,7 @@ export function Hero() {
                   whileHover={{ scale: 1.04, y: -2 }}
                   whileTap={{ scale: 0.97 }}
                   onClick={() => scrollToSection('contact')}
-                  className="flex items-center gap-2 px-6 py-3 border-2 border-ink/15 text-ink font-semibold rounded-full hover:border-violet-400 hover:text-violet-600 transition-colors cursor-pointer"
+                  className="flex items-center gap-2 px-4 py-2.5 sm:px-6 sm:py-3 border-2 border-ink/15 text-ink font-semibold rounded-full hover:border-violet-400 hover:text-violet-600 transition-colors cursor-pointer text-sm sm:text-base"
                 >
                   <Mail className="w-4 h-4" /> Get in Touch
                 </motion.button>
@@ -189,7 +189,7 @@ export function Hero() {
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.04, y: -2 }}
                   whileTap={{ scale: 0.97 }}
-                  className="flex items-center gap-2 px-6 py-3 border border-ink/10 bg-white text-ink-body font-semibold rounded-full hover:text-violet-600 hover:border-violet-300 transition-colors"
+                  className="flex items-center gap-2 px-4 py-2.5 sm:px-6 sm:py-3 border border-ink/10 bg-white text-ink-body font-semibold rounded-full hover:text-violet-600 hover:border-violet-300 transition-colors text-sm sm:text-base"
                 >
                   <Download className="w-4 h-4" /> Resume
                 </motion.a>
@@ -225,7 +225,7 @@ export function Hero() {
                     transition={{ delay: 0.8 + i * 0.1, type: 'spring', damping: 18, stiffness: 260 }}
                     whileHover={{ scale: 1.15, y: -4, rotate: 4, borderColor: '#A3A3EA' }}
                     whileTap={{ scale: 0.92 }}
-                    className="p-2.5 rounded-full bg-white border border-ink/10 text-ink-body hover:text-indigo-600 shadow-sm transition-colors cursor-pointer"
+                    className="p-2 sm:p-2.5 rounded-full bg-white border border-ink/10 text-ink-body hover:text-indigo-600 shadow-sm transition-colors cursor-pointer"
                   >
                     {link.icon}
                   </motion.a>
@@ -255,7 +255,7 @@ export function Hero() {
               <motion.div
                 whileHover={{ y: -6 }}
                 transition={{ type: 'spring', stiffness: 260, damping: 20 }}
-                className="relative w-[min(420px,88vw)] aspect-[4/5] rounded-[2.5rem] bg-gradient-to-br from-indigo-600 via-indigo-700 to-violet-600 shadow-2xl shadow-indigo-600/40 p-6 sm:p-8 overflow-hidden"
+                className="relative w-[min(320px,82vw)] sm:w-[min(420px,88vw)] aspect-[4/5] rounded-[2rem] sm:rounded-[2.5rem] bg-gradient-to-br from-indigo-600 via-indigo-700 to-violet-600 shadow-2xl shadow-indigo-600/40 p-4 sm:p-6 lg:p-8 overflow-hidden"
               >
                 {/* Panel inner texture */}
                 <div className="absolute inset-0 opacity-20 pointer-events-none"
@@ -276,7 +276,7 @@ export function Hero() {
                 />
 
                 {/* Panel header chips */}
-                <div className="relative flex items-center justify-between mb-6">
+                <div className="relative flex items-center justify-between mb-4 sm:mb-6">
                   <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/15 text-white text-xs font-semibold backdrop-blur-sm">
                     <Sparkles className="w-3.5 h-3.5" /> DevOps · SRE
                   </span>
@@ -294,13 +294,13 @@ export function Hero() {
                   className="relative bg-white rounded-2xl shadow-xl overflow-hidden"
                 >
                   {/* Window title bar with traffic dots */}
-                  <div className="flex items-center gap-2 px-4 py-3 bg-cream-light border-b border-ink/10">
-                    <span className="w-3 h-3 rounded-full bg-[#ff5f57]" />
-                    <span className="w-3 h-3 rounded-full bg-[#febc2e]" />
-                    <span className="w-3 h-3 rounded-full bg-[#28c840]" />
-                    <span className="ml-2 text-[11px] text-ink-muted font-mono">ujwal@devops ~ kubectl</span>
+                  <div className="flex items-center gap-2 px-3 py-2.5 sm:px-4 sm:py-3 bg-cream-light border-b border-ink/10">
+                    <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#ff5f57]" />
+                    <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#febc2e]" />
+                    <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#28c840]" />
+                    <span className="ml-2 text-[10px] sm:text-[11px] text-ink-muted font-mono">ujwal@devops ~ kubectl</span>
                   </div>
-                  <div className="p-4 sm:p-5 space-y-3 font-mono text-[12px] leading-relaxed">
+                  <div className="p-3 sm:p-4 lg:p-5 space-y-2 sm:space-y-3 font-mono text-[10px] sm:text-[11px] lg:text-[12px] leading-relaxed">
                     <div className="flex items-center gap-2">
                       <span className="text-green-600 font-bold">❯</span>
                       <span className="text-ink-body">kubectl get deployments</span>
@@ -330,7 +330,7 @@ export function Hero() {
                   initial={{ opacity: 0, y: 16 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 1.4, duration: 0.5 }}
-                  className="relative mt-6 grid grid-cols-3 gap-3"
+                  className="relative mt-4 sm:mt-6 grid grid-cols-3 gap-2 sm:gap-3"
                 >
                   {[
                     { v: '2+', l: 'Years' },
@@ -340,10 +340,10 @@ export function Hero() {
                     <motion.div
                       key={s.l}
                       whileHover={{ scale: 1.06 }}
-                      className="bg-white/10 border border-white/15 rounded-xl px-3 py-3 text-center backdrop-blur-sm"
+                      className="bg-white/10 border border-white/15 rounded-lg sm:rounded-xl px-2 py-2 sm:px-3 sm:py-3 text-center backdrop-blur-sm"
                     >
-                      <div className="text-xl font-black text-white">{s.v}</div>
-                      <div className="text-[10px] text-white/70 font-medium uppercase tracking-wider">{s.l}</div>
+                      <div className="text-base sm:text-xl font-black text-white">{s.v}</div>
+                      <div className="text-[8px] sm:text-[10px] text-white/70 font-medium uppercase tracking-wider">{s.l}</div>
                     </motion.div>
                   ))}
                 </motion.div>
@@ -382,7 +382,7 @@ export function Hero() {
       </motion.div>
 
       {/* Scrolling ticker (design.md — marquee) */}
-      <div className="relative z-10 border-t border-ink/10 bg-white/60 backdrop-blur-sm py-4 overflow-hidden marquee-mask">
+      <div className="relative z-10 border-t border-ink/10 bg-white/60 backdrop-blur-sm py-3 sm:py-4 overflow-hidden marquee-mask">
         <div className="animate-marquee flex whitespace-nowrap">
           {doubled.map((item, i) => (
             <div key={i} className="flex items-center gap-6 px-6 flex-shrink-0">

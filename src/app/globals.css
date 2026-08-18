@@ -6,8 +6,9 @@
   * {
     @apply border-ink/10;
   }
-  html {
+  html, body {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
   body {
     @apply bg-cream text-ink;

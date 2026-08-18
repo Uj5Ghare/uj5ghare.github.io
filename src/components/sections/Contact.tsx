@@ -183,7 +183,7 @@ export function Contact() {
             transition={{ delay: 0.5, duration: 0.6, ease: easeEntrance }}
             className="lg:col-span-3"
           >
-            <div className="bg-white border border-ink/10 rounded-3xl p-8 shadow-lg shadow-indigo-500/5 relative overflow-hidden">
+            <div className="bg-white border border-ink/10 rounded-3xl p-5 sm:p-8 shadow-lg shadow-indigo-500/5 relative overflow-hidden">
               <div className="absolute -top-16 -right-16 w-48 h-48 rounded-full bg-indigo-50 opacity-70 pointer-events-none" />
 
               <h3 className="text-xl font-black text-ink mb-6">Send a Message</h3>

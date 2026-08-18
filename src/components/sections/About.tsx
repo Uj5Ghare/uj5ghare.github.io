@@ -38,9 +38,9 @@ function StatCard({ value, label, suffix = '', delay }: { value: number; label: 
       viewport={{ once: true, margin: '-60px' }}
       transition={{ delay, duration: 0.5, ease: easeEntrance }}
       whileHover={{ y: -4, boxShadow: '0 16px 32px -16px rgba(88,58,203,0.35)', borderColor: '#A3A3EA' }}
-      className="card-surface p-5 text-center"
+      className="card-surface p-4 sm:p-5 text-center"
     >
-      <div ref={ref} className="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-500 mb-1">
+      <div ref={ref} className="text-2xl sm:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-500 mb-1">
         {count}{suffix}
       </div>
       <div className="text-[11px] text-ink-muted font-semibold uppercase tracking-wider">{label}</div>
@@ -57,7 +57,7 @@ const domains = [
 
 export function About() {
   return (
-    <section id="about" className="py-24 lg:py-36 bg-white relative overflow-hidden">
+    <section id="about" className="py-16 sm:py-24 lg:py-36 bg-white relative overflow-hidden">
       {/* subtle blobs */}
       <div className="blob top-40 -left-20 w-72 h-72 opacity-40 animate-blob-pulse" style={{ background: '#EFEDFB' }} />
       <div className="blob bottom-24 -right-16 w-80 h-80 opacity-40 animate-blob-pulse" style={{ background: '#FCE3D5', animationDelay: '2s' }} />
@@ -77,7 +77,7 @@ export function About() {
         {/* Headline */}
         <motion.h2
           variants={fadeInUp}
-          className="text-4xl sm:text-5xl lg:text-6xl font-black text-ink leading-[1.05] mb-16 max-w-4xl"
+          className="text-4xl sm:text-5xl lg:text-6xl font-black text-ink leading-[1.05] mb-10 sm:mb-16 max-w-4xl"
         >
           DevOps Engineer.{' '}
           <span className="text-gradient-indigo">Cloud Builder.</span> Infrastructure{' '}
@@ -93,14 +93,14 @@ export function About() {
           </span>
         </motion.h2>
 
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           {/* ---- Left: terminal + stats + CTAs ---- */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.6, ease: easeEntrance }}
-            className="space-y-8"
+            className="space-y-6 sm:space-y-8"
           >
             {/* Terminal card */}
             <motion.div
@@ -108,13 +108,13 @@ export function About() {
               transition={{ type: 'spring', stiffness: 260, damping: 20 }}
               className="bg-cream-light border border-ink/10 rounded-2xl overflow-hidden font-mono text-sm shadow-lg shadow-indigo-500/5"
             >
-              <div className="flex items-center gap-2 px-4 py-3 bg-white border-b border-ink/10">
-                <span className="w-3 h-3 rounded-full bg-[#ff5f57]" />
-                <span className="w-3 h-3 rounded-full bg-[#febc2e]" />
-                <span className="w-3 h-3 rounded-full bg-[#28c840]" />
-                <span className="ml-3 text-xs text-ink-muted select-none">ujwal@devops ~ zsh</span>
+              <div className="flex items-center gap-2 px-3 py-2.5 sm:px-4 sm:py-3 bg-white border-b border-ink/10">
+                <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#ff5f57]" />
+                <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#febc2e]" />
+                <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#28c840]" />
+                <span className="ml-2 sm:ml-3 text-[10px] sm:text-xs text-ink-muted select-none">ujwal@devops ~ zsh</span>
               </div>
-              <div className="p-5 space-y-3 text-[13px] leading-relaxed">
+              <div className="p-3 sm:p-4 lg:p-5 space-y-2.5 sm:space-y-3 text-[10px] sm:text-[12px] lg:text-[13px] leading-relaxed overflow-x-auto">
                 <motion.div
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
@@ -164,13 +164,13 @@ export function About() {
                   transition={{ delay: 0.9 }}
                   className="pl-2 space-y-1"
                 >
-                  <div className="text-ink-muted text-xs">NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;STATUS&nbsp;&nbsp;&nbsp;ROLES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AGE</div>
+                  <div className="text-ink-muted text-[9px] sm:text-[11px] lg:text-xs whitespace-nowrap">NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;STATUS&nbsp;&nbsp;&nbsp;ROLES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AGE</div>
                   <motion.div
                     initial={{ opacity: 0, x: -8 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 1.1 }}
-                    className="text-ink-body text-xs"
+                    className="text-ink-body text-[9px] sm:text-[11px] lg:text-xs whitespace-nowrap"
                   >
                     prod-cluster-1&nbsp;&nbsp;<span className="text-green-600">Ready</span>&nbsp;&nbsp;&nbsp;control-plane&nbsp;&nbsp;14m
                   </motion.div>
@@ -179,7 +179,7 @@ export function About() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 1.25 }}
-                    className="text-ink-body text-xs"
+                    className="text-ink-body text-[9px] sm:text-[11px] lg:text-xs whitespace-nowrap"
                   >
                     prod-cluster-2&nbsp;&nbsp;<span className="text-green-600">Ready</span>&nbsp;&nbsp;&nbsp;control-plane&nbsp;&nbsp;9m
                   </motion.div>
@@ -205,7 +205,7 @@ export function About() {
             </motion.div>
 
             {/* Stats grid — count-up */}
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-3 sm:gap-4">
               <StatCard value={2} suffix="+" label="Years of Experience" delay={0} />
               <StatCard value={15} suffix="+" label="Projects Shipped" delay={0.1} />
               <StatCard value={4} suffix="+" label="Client Projects" delay={0.2} />
@@ -213,7 +213,7 @@ export function About() {
             </div>
 
             {/* CTAs */}
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-2 sm:gap-3">
               <motion.a
                 href="mailto:ujwal5ghare@gmail.com"
                 whileHover={{ y: -2, boxShadow: '0 14px 28px -12px rgba(88,58,203,0.5)' }}
@@ -241,10 +241,10 @@ export function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.6, ease: easeEntrance }}
-            className="space-y-10"
+            className="space-y-8 sm:space-y-10"
           >
             <div className="space-y-5 text-ink-body leading-relaxed">
-              <p className="text-lg text-ink">
+              <p className="text-base sm:text-lg text-ink">
                 I have over{' '}
                 <strong className="text-indigo-600">2+ years of experience</strong> working with
                 software companies, focusing on software delivery, maintenance, and production
@@ -274,7 +274,7 @@ export function About() {
               <h3 className="text-xs font-bold text-indigo-600 tracking-[0.3em] uppercase mb-6 flex items-center gap-2">
                 <span className="w-8 h-px bg-indigo-400" /> Domain Expertise
               </h3>
-              <div className="grid sm:grid-cols-2 gap-4">
+              <div               className="grid sm:grid-cols-2 gap-3 sm:gap-4">
                 {domains.map((d, i) => (
                   <motion.div
                     key={d.title}
@@ -283,11 +283,11 @@ export function About() {
                     viewport={{ once: true, margin: '-40px' }}
                     transition={{ delay: i * 0.1, duration: 0.5, ease: easeEntrance }}
                     whileHover={{ y: -5, borderColor: '#A3A3EA', boxShadow: '0 16px 32px -16px rgba(88,58,203,0.3)' }}
-                    className="flex items-start gap-4 p-4 bg-white border border-ink/10 rounded-2xl shadow-sm transition-colors"
+                    className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 bg-white border border-ink/10 rounded-2xl shadow-sm transition-colors"
                   >
                     <motion.div
                       whileHover={{ rotate: 8, scale: 1.1 }}
-                      className="p-2.5 rounded-xl bg-indigo-50 text-indigo-600 flex-shrink-0"
+                      className="p-2 sm:p-2.5 rounded-xl bg-indigo-50 text-indigo-600 flex-shrink-0"
                     >
                       <d.icon className="w-5 h-5" />
                     </motion.div>
@@ -306,7 +306,7 @@ export function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.4, duration: 0.5, ease: easeEntrance }}
-              className="relative flex items-start gap-4 p-5 bg-gradient-to-r from-indigo-50 to-violet-50 border border-indigo-100 rounded-2xl overflow-hidden"
+              className="relative flex items-start gap-3 sm:gap-4 p-4 sm:p-5 bg-gradient-to-r from-indigo-50 to-violet-50 border border-indigo-100 rounded-2xl overflow-hidden"
             >
               <motion.div
                 className="absolute inset-0 opacity-30"
